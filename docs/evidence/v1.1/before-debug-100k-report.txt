@@ -1,0 +1,419 @@
+CSV Import Pipeline Benchmark Report
+====================================
+
+File            : data/sample_100k.csv
+Repeats         : 3
+Avg time        : 37862.6 ms
+Throughput      : 2588 rows/sec
+
+--- Per-run Summary ---
+run  rows_imported  rows_skipped  errors  error_limit_hit  time_ms
+1    98000              2000            2000       no              35155.7
+2    98000              2000            2000       no              38929.1
+3    98000              2000            2000       no              39503
+
+--- Error Rows (sample) ---
+line 50: 49,User000049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 100: 99,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 150: 149,User000149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 200: 199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 250: 249,User000249,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 300: 299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 350: 349,User000349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 400: 399,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 450: 449,User000449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 500: 499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 550: 549,User000549,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 600: 599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 650: 649,User000649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 700: 699,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 750: 749,User000749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 800: 799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 850: 849,User000849,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 900: 899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 950: 949,User000949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1000: 999,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1050: 1049,User001049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1100: 1099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1150: 1149,User001149,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1200: 1199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1250: 1249,User001249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1300: 1299,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1350: 1349,User001349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1400: 1399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1450: 1449,User001449,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1500: 1499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1550: 1549,User001549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1600: 1599,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1650: 1649,User001649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1700: 1699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1750: 1749,User001749,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1800: 1799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1850: 1849,User001849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 1900: 1899,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 1950: 1949,User001949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2000: 1999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2050: 2049,User002049,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2100: 2099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2150: 2149,User002149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2200: 2199,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2250: 2249,User002249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2300: 2299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2350: 2349,User002349,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2400: 2399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2450: 2449,User002449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2500: 2499,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2550: 2549,User002549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2600: 2599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2650: 2649,User002649,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2700: 2699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2750: 2749,User002749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2800: 2799,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2850: 2849,User002849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 2900: 2899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 2950: 2949,User002949,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3000: 2999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3050: 3049,User003049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3100: 3099,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3150: 3149,User003149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3200: 3199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3250: 3249,User003249,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3300: 3299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3350: 3349,User003349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3400: 3399,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3450: 3449,User003449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3500: 3499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3550: 3549,User003549,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3600: 3599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3650: 3649,User003649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3700: 3699,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3750: 3749,User003749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3800: 3799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3850: 3849,User003849,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 3900: 3899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 3950: 3949,User003949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4000: 3999,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4050: 4049,User004049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4100: 4099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4150: 4149,User004149,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4200: 4199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4250: 4249,User004249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4300: 4299,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4350: 4349,User004349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4400: 4399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4450: 4449,User004449,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4500: 4499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4550: 4549,User004549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4600: 4599,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4650: 4649,User004649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4700: 4699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4750: 4749,User004749,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4800: 4799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4850: 4849,User004849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 4900: 4899,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 4950: 4949,User004949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5000: 4999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5050: 5049,User005049,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5100: 5099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5150: 5149,User005149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5200: 5199,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5250: 5249,User005249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5300: 5299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5350: 5349,User005349,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5400: 5399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5450: 5449,User005449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5500: 5499,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5550: 5549,User005549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5600: 5599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5650: 5649,User005649,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5700: 5699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5750: 5749,User005749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5800: 5799,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5850: 5849,User005849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 5900: 5899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 5950: 5949,User005949,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6000: 5999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6050: 6049,User006049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6100: 6099,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6150: 6149,User006149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6200: 6199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6250: 6249,User006249,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6300: 6299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6350: 6349,User006349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6400: 6399,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6450: 6449,User006449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6500: 6499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6550: 6549,User006549,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6600: 6599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6650: 6649,User006649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6700: 6699,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6750: 6749,User006749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6800: 6799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6850: 6849,User006849,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 6900: 6899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 6950: 6949,User006949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7000: 6999,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7050: 7049,User007049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7100: 7099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7150: 7149,User007149,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7200: 7199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7250: 7249,User007249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7300: 7299,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7350: 7349,User007349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7400: 7399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7450: 7449,User007449,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7500: 7499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7550: 7549,User007549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7600: 7599,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7650: 7649,User007649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7700: 7699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7750: 7749,User007749,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7800: 7799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7850: 7849,User007849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 7900: 7899,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 7950: 7949,User007949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8000: 7999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8050: 8049,User008049,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8100: 8099,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8150: 8149,User008149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8200: 8199,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8250: 8249,User008249,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8300: 8299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8350: 8349,User008349,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8400: 8399,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8450: 8449,User008449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8500: 8499,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8550: 8549,User008549,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8600: 8599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8650: 8649,User008649,abc,64.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8700: 8699,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8750: 8749,User008749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8800: 8799,,67,79.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8850: 8849,User008849,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 8900: 8899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 8950: 8949,User008949,abc,94.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9000: 8999,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9050: 9049,User009049,abc,54.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9100: 9099,,67,59.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9150: 9149,User009149,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9200: 9199,,67,69.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9250: 9249,User009249,abc,74.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9300: 9299,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9350: 9349,User009349,abc,84.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9400: 9399,,67,89.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9450: 9449,User009449,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9500: 9499,,67,99.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9550: 9549,User009549,abc,54.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9600: 9599,,67,59.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9650: 9649,User009649,abc,64.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9700: 9699,,67,69.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9750: 9749,User009749,abc,74.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9800: 9799,,67,79.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9850: 9849,User009849,abc,84.9,true
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 9900: 9899,,67,89.9,false
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+line 9950: 9949,User009949,abc,94.9,false
+    [col 2 'age'] value='abc' code=TypeConversionError msg=Expected integer, got: abc
+line 10000: 9999,,67,99.9,true
+    [col 1 'name'] value='' code=RequiredFieldMissing msg=Required field is empty
+
+--- Note ---
+This report is generated by csvp_bench for visual inspection.
+Use rows_imported / rows_skipped / error rows to verify correctness.

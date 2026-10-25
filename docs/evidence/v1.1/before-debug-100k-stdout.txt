@@ -1,0 +1,15 @@
+CSV Import Pipeline Benchmark
+=============================
+
+  Run 1: 98000 rows in 35155.7 ms (2000 skipped) [2000 error rows]
+  Run 2: 98000 rows in 38929.1 ms (2000 skipped) [2000 error rows]
+  Run 3: 98000 rows in 39503 ms (2000 skipped) [2000 error rows]
+
+--- Summary ---
+File: data/sample_100k.csv
+Repeats: 3
+Avg rows: 98000
+Avg time: 37862.6 ms
+Throughput: 2588 rows/sec
+
+Report written to: docs/evidence/v1.1/before-debug-100k-report.txt
