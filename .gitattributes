@@ -1,0 +1,2 @@
+# CSV fixtures include encoding and line-ending regression cases.
+*.csv -text

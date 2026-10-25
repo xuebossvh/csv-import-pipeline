@@ -1,0 +1,25 @@
+# build output
+build/
+build-*/
+*.exe
+*.lib
+*.dll
+*.obj
+*.pdb
+*.ilk
+
+# IDE
+.vs/
+.vscode/
+.specstory/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# third-party (bundled, not part of submission)
+third_party/
+
+# temp
+*.tmp
+*.log

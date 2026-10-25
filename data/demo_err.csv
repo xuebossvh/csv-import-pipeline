@@ -1,0 +1,6 @@
+id,name,age,score,active
+1,Alice,25,95.5,true
+2,,30,87.3,false
+3,Bob,abc,88.1,true
+4,,abc,,true
+5,Charlie,40,77.7,false

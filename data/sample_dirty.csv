@@ -1,0 +1,9 @@
+id,name,age,score,active
+1,Alice,25,95.5,true
+2,Bob,30,87.3,false
+3,Charlie,extra_col,22,78.9,true
+4,Diana,N/A,92.1,true
+5,Eve,,88.7,false
+6,Frank,abc,76.4,yes
+7,Grace,99,999.9,maybe
+

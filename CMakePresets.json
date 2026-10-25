@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "csv-msvc-x64",
+      "displayName": "CSV: Visual Studio 2022 x64",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "toolset": "v143",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_GENERATOR_INSTANCE": "D:/Software/VSBuildTools2022",
+        "CMAKE_CONFIGURATION_TYPES": "Debug;Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "csv-debug",
+      "displayName": "CSV: Debug",
+      "configurePreset": "csv-msvc-x64",
+      "configuration": "Debug"
+    },
+    {
+      "name": "csv-release",
+      "displayName": "CSV: Release",
+      "configurePreset": "csv-msvc-x64",
+      "configuration": "Release"
+    }
+  ]
+}
