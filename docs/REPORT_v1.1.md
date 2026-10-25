@@ -137,7 +137,7 @@ Google Test 1.14 的 XML 窄路径写入遇到中文工作区问题，证据采�
 
 ## 附件
 
-- [工作区 skill](../.agents/skills/csvp-delivery/SKILL.md)
+- 工作区提交标准 skill 及采集脚本仅保留在本地，不随当前分支发布。
 - [Git 历史快照](evidence/v1.1/git-history.txt)：定位基线 → 审查 → 提交标准 → 修复前测量 → 代码修复；最终文档提交及标签以仓库历史为准。
 - [Debug 输出](evidence/v1.1/debug-tests.txt) / [XML](evidence/v1.1/debug-tests.xml)
 - [Release 输出](evidence/v1.1/release-tests.txt) / [XML](evidence/v1.1/release-tests.xml)
@@ -147,4 +147,4 @@ Google Test 1.14 的 XML 窄路径写入遇到中文工作区问题，证据采�
 - [修复前 Debug](evidence/v1.1/before-debug-100k.json)、[修复后 Debug](evidence/v1.1/after-debug-100k.json)、[修复后 Release](evidence/v1.1/after-release-100k.json)
 - [1 GB 实测](evidence/v1.1/after-release-1gb.json)、[程序报告](evidence/v1.1/after-release-1gb-report.txt)、[汇总](evidence/v1.1/summary.json)
 
-测试源码、样本、第三方库及构建产物继续遵守用户指定的本地排除规则。远程包含修复实现、采集脚本和证据；在另一台机器重跑测试仍需准备对应本地资料。临时父工程构建/测试桥接已移除，父工作区配置已恢复；正常 Debug/Release 输出目录也已更新为本次实现。
+测试源码、样本、第三方库及构建产物继续遵守用户指定的本地排除规则。当前分支包含修复实现、报告和证据，AGENTS.md、工作区 skill 及采集脚本仅保留本地；在另一台机器重跑测试仍需准备对应本地资料。临时父工程构建/测试桥接已移除，父工作区配置已恢复；正常 Debug/Release 输出目录也已更新为本次实现。

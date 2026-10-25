@@ -1,11 +1,11 @@
 # CSV Import Pipeline v1.1
 
-C++17 CSV 解析与校验库。v1.1 完成 Part A 的同步路径修复，详见 [版本报告](docs/REPORT_v1.1.md) 和 [工作区提交标准 skill](.agents/skills/csvp-delivery/SKILL.md)。[原始审查](docs/PART_A_AUDIT.md) 保留为历史基线，不是当前待修列表。
+C++17 CSV 解析与校验库。v1.1 完成 Part A 的同步路径修复，详见 [版本报告](docs/REPORT_v1.1.md)。[原始审查](docs/PART_A_AUDIT.md) 保留为历史基线，不是当前待修列表。
 
 ## 发布范围
 
-仓库保留核心库、压测程序、CMake 配置、skill、报告和小型证据。
-按用户指定范围，data、tests、third_party、Cursor 配置及旧机器脚本仅留在本地，不跟踪。新克隆默认构建库与压测程序，测试需要本地准备完整测试源码、样本和 Google Test 1.14。
+仓库保留核心库、压测程序、CMake 配置、报告和小型证据。
+按用户指定范围，data、tests、third_party、Cursor 配置、AGENTS.md、.agents 目录及旧机器脚本仅留在本地，不跟踪。工作区 skill 与采集脚本仍可在本机使用。新克隆默认构建库与压测程序，测试需要本地准备完整测试源码、样本和 Google Test 1.14。
 
 成功行数表示解析和校验通过，不代表写入数据库。importStreaming、shutdown 仍为 Part B 骨架，v1.1 不实现后台导入或优雅停止。
 

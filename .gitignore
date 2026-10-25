@@ -16,6 +16,8 @@ build-*/
 .cursorignore
 .cursorindexingignore
 .cursorrules
+/.agents/
+/AGENTS.md
 *.user
 *.suo
 *.VC.db
