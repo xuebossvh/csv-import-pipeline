@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(csv_import_pipeline VERSION 1.0.0 LANGUAGES CXX)
+project(csv_import_pipeline VERSION 1.1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # -------------------- options --------------------
-option(ENABLE_ASAN "Build with AddressSanitizer (MSVC x64 only)" OFF)
+option(ENABLE_ASAN "Build with AddressSanitizer (requires the matching compiler runtime)" OFF)
 option(BUILD_TESTS "Build local unit tests (requires tests and bundled GoogleTest)" OFF)
 option(BUILD_BENCH "Build benchmarks" ON)
 
@@ -30,8 +30,10 @@ if(MSVC)
         /W4             # warning level 4
     )
     if(ENABLE_ASAN)
+        string(REGEX REPLACE "/RTC[1su]" "" CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
+        string(REPLACE "/ZI" "/Zi" CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
         target_compile_options(csvp PUBLIC /fsanitize=address)
-        target_link_options(csvp PUBLIC /fsanitize=address)
+        target_link_options(csvp INTERFACE /INCREMENTAL:NO)
     endif()
 else()
     target_compile_options(csvp PUBLIC -Wall -Wextra -pedantic)
@@ -42,6 +44,19 @@ else()
 endif()
 
 # -------------------- tests --------------------
+function(csvp_copy_asan_runtime target)
+    if(MSVC AND ENABLE_ASAN)
+        get_filename_component(_compiler_dir "${CMAKE_CXX_COMPILER}" DIRECTORY)
+        file(GLOB _asan_runtime "${_compiler_dir}/clang_rt.asan_dynamic-*.dll")
+        if(NOT _asan_runtime)
+            message(FATAL_ERROR "ASan runtime DLL was not found beside ${CMAKE_CXX_COMPILER}")
+        endif()
+        add_custom_command(TARGET ${target} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different ${_asan_runtime} "$<TARGET_FILE_DIR:${target}>"
+            VERBATIM)
+    endif()
+endfunction()
+
 if(BUILD_TESTS)
     enable_testing()
 
@@ -52,6 +67,19 @@ if(BUILD_TESTS)
     set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
     add_subdirectory(third_party/googletest)
 
+    # MSVC's STL container annotations must agree across every linked library.
+    if(ENABLE_ASAN)
+        foreach(_test_library gtest gtest_main gmock gmock_main)
+            if(TARGET ${_test_library})
+                if(MSVC)
+                    target_compile_options(${_test_library} PRIVATE /fsanitize=address)
+                else()
+                    target_compile_options(${_test_library} PRIVATE -fsanitize=address -fno-omit-frame-pointer)
+                endif()
+            endif()
+        endforeach()
+    endif()
+
     set(TEST_SOURCES
         tests/test_parser.cpp
         tests/test_validator.cpp
@@ -61,16 +89,13 @@ if(BUILD_TESTS)
 
     add_executable(csvp_tests ${TEST_SOURCES})
     target_link_libraries(csvp_tests PRIVATE csvp GTest::gtest GTest::gtest_main)
-    target_compile_definitions(csvp_tests PRIVATE TEST_DATA_DIR="${CMAKE_SOURCE_DIR}/data/")
+    target_compile_definitions(csvp_tests PRIVATE TEST_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/data/")
 
     if(MSVC)
         target_compile_options(csvp_tests PRIVATE /utf-8 /permissive- /EHsc /W4)
-        if(ENABLE_ASAN)
-            target_compile_options(csvp_tests PRIVATE /fsanitize=address)
-            target_link_options(csvp_tests PRIVATE /fsanitize=address)
-        endif()
     endif()
 
+    csvp_copy_asan_runtime(csvp_tests)
     include(GoogleTest)
     gtest_discover_tests(csvp_tests)
 endif()
@@ -79,6 +104,10 @@ endif()
 if(BUILD_BENCH)
     add_executable(csvp_bench bench/bench_import.cpp)
     target_link_libraries(csvp_bench PRIVATE csvp)
+    if(WIN32)
+        target_link_libraries(csvp_bench PRIVATE shell32)
+    endif()
+    csvp_copy_asan_runtime(csvp_bench)
 
 
     # 默认运行参数：csvp_bench sample_utf8.csv 3 output.txt

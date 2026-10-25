@@ -1,6 +1,10 @@
 {
   "version": 3,
-  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
   "configurePresets": [
     {
       "name": "csv-msvc-x64",
@@ -12,6 +16,28 @@
       "cacheVariables": {
         "CMAKE_GENERATOR_INSTANCE": "D:/Software/VSBuildTools2022",
         "CMAKE_CONFIGURATION_TYPES": "Debug;Release"
+      }
+    },
+    {
+      "name": "csv-msvc-x64-validation",
+      "displayName": "CSV: x64 Debug and Release validation",
+      "inherits": "csv-msvc-x64",
+      "binaryDir": "${sourceDir}/build/validation",
+      "cacheVariables": {
+        "BUILD_TESTS": "ON",
+        "ENABLE_ASAN": "OFF"
+      }
+    },
+    {
+      "name": "csv-msvc-x86-asan",
+      "displayName": "CSV: x86 AddressSanitizer",
+      "inherits": "csv-msvc-x64",
+      "architecture": "Win32",
+      "binaryDir": "${sourceDir}/build/asan",
+      "cacheVariables": {
+        "BUILD_TESTS": "ON",
+        "ENABLE_ASAN": "ON",
+        "CMAKE_CONFIGURATION_TYPES": "RelWithDebInfo"
       }
     }
   ],
@@ -27,6 +53,50 @@
       "displayName": "CSV: Release",
       "configurePreset": "csv-msvc-x64",
       "configuration": "Release"
+    },
+    {
+      "name": "csv-validation-debug",
+      "configurePreset": "csv-msvc-x64-validation",
+      "configuration": "Debug"
+    },
+    {
+      "name": "csv-validation-release",
+      "configurePreset": "csv-msvc-x64-validation",
+      "configuration": "Release"
+    },
+    {
+      "name": "csv-asan",
+      "configurePreset": "csv-msvc-x86-asan",
+      "configuration": "RelWithDebInfo"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "csv-validation-debug",
+      "configurePreset": "csv-msvc-x64-validation",
+      "configuration": "Debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "csv-validation-release",
+      "configurePreset": "csv-msvc-x64-validation",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "csv-asan",
+      "configurePreset": "csv-msvc-x86-asan",
+      "configuration": "RelWithDebInfo",
+      "output": {
+        "outputOnFailure": true
+      },
+      "environment": {
+        "ASAN_OPTIONS": "halt_on_error=1:abort_on_error=1"
+      }
     }
   ]
 }

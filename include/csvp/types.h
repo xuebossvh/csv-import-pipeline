@@ -20,6 +20,7 @@ enum class ErrorCode : int {
     EncodingError,         // 编码错误
     FileNotOpen,           // 文件打开失败
     InternalError,         // 内部错误
+    IOError,              // 文件读取失败（不能作为坏行跳过）
 };
 
 // ---------- validation rule ----------
@@ -48,22 +49,26 @@ struct CellError {
     std::string raw_value;
     ErrorCode code = ErrorCode::Ok;
     std::string message;
+    bool details_truncated = false;
 };
 
 // ---------- per-row error ----------
 struct RowError {
-    size_t line_number = 0;
-    std::string raw_line;      // 原始行的完整拷贝
+    uint64_t line_number = 0;
+    std::string raw_line;      // 原始行（不含行尾）；受预算截断时看details_truncated
     std::vector<CellError> cell_errors;
+    bool details_truncated = false;
 };
 
 // ---------- pipeline stats ----------
 struct Stats {
-    size_t total_lines = 0;
-    size_t bytes_read = 0;
-    size_t rows_imported = 0;
-    size_t rows_skipped = 0;
+    uint64_t total_lines = 0;
+    uint64_t bytes_read = 0;
+    uint64_t rows_imported = 0;
+    uint64_t rows_skipped = 0;
     double elapsed_ms = 0.0;
+    uint64_t error_count = 0;
+    bool errors_truncated = false;
 };
 
 } // namespace csvp

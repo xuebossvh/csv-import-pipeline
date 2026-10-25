@@ -6,6 +6,11 @@
 #include <vector>
 #include <stdexcept>
 #include <cstdlib>
+#include <cerrno>
+#include <cmath>
+#include <limits>
+#include <optional>
+#include <utility>
 
 namespace csvp {
 
@@ -35,22 +40,61 @@ public:
     }
 
     // ---------- typed accessors ----------
-    int toInt(size_t index) const {
-        if (index >= fields_.size()) return 0;
-        const auto& s = fields_[index];
-        if (s.empty()) return 0;
+    // Strict conversions: invalid/empty/partial input throws invalid_argument;
+    // numeric overflow/underflow or an invalid column index throws out_of_range.
+    // These helpers are also used by FieldValidator, so both APIs agree.
+    static int parseInt(const std::string& value) {
+        char* end = nullptr;
+        errno = 0;
+        const long parsed = std::strtol(value.c_str(), &end, 10);
+        if (end == value.c_str() || end != value.c_str() + value.size()) {
+            throw std::invalid_argument("Expected a complete integer");
+        }
+        if (errno == ERANGE || parsed < std::numeric_limits<int>::min() ||
+            parsed > std::numeric_limits<int>::max()) {
+            throw std::out_of_range("Integer is outside the int range");
+        }
+        return static_cast<int>(parsed);
+    }
+
+    static double parseDouble(const std::string& value) {
+        char* end = nullptr;
+        errno = 0;
+        const double parsed = std::strtod(value.c_str(), &end);
+        if (end == value.c_str() || end != value.c_str() + value.size()) {
+            throw std::invalid_argument("Expected a complete number");
+        }
+        if (errno == ERANGE) {
+            throw std::out_of_range("Number is outside the double range");
+        }
+        if (!std::isfinite(parsed)) {
+            throw std::invalid_argument("Expected a finite number");
+        }
+        return parsed;
+    }
+
+    int toInt(size_t index) const { return parseInt(fields_.at(index)); }
+
+    double toDouble(size_t index) const { return parseDouble(fields_.at(index)); }
+
+    std::optional<int> tryToInt(size_t index) const {
         try {
-            return std::stoi(s);
-        } catch (...) {
-            return 0;
+            return toInt(index);
+        } catch (const std::invalid_argument&) {
+            return std::nullopt;
+        } catch (const std::out_of_range&) {
+            return std::nullopt;
         }
     }
 
-    double toDouble(size_t index) const {
-        if (index >= fields_.size()) return 0.0;
-        const auto& s = fields_[index];
-        if (s.empty()) return 0.0;
-        return std::atof(s.c_str());
+    std::optional<double> tryToDouble(size_t index) const {
+        try {
+            return toDouble(index);
+        } catch (const std::invalid_argument&) {
+            return std::nullopt;
+        } catch (const std::out_of_range&) {
+            return std::nullopt;
+        }
     }
 
     const std::string& toString(size_t index) const {
@@ -60,9 +104,10 @@ public:
     }
 
     bool toBool(size_t index) const {
-        if (index >= fields_.size()) return false;
-        const auto& s = fields_[index];
-        return s == "true" || s == "TRUE" || s == "1" || s == "yes";
+        const auto& s = fields_.at(index);
+        if (s == "true" || s == "TRUE" || s == "1" || s == "yes") return true;
+        if (s == "false" || s == "FALSE" || s == "0" || s == "no") return false;
+        throw std::invalid_argument("Expected a boolean");
     }
 
     // ---------- internal ----------

@@ -25,14 +25,19 @@ public:
     struct Config {
         CsvParser::Config parser;
         bool skip_bad_rows = false;   // 是否跳过坏行继续导入
-        size_t error_limit = 0;       // 最大收集错误数；0 表示不限制（全部收集）
+        size_t error_limit = 200;     // 最大错误详情条数；0 显式表示不限
+        size_t max_error_bytes = 4 * 1024 * 1024; // 详情字节预算；0 显式表示不限
     };
 
     struct Result {
-        size_t rows_imported = 0;
-        size_t rows_skipped = 0;
+        uint64_t rows_imported = 0;
+        uint64_t rows_skipped = 0;
         std::vector<RowError> errors; // 错误详情列表
         double elapsed_ms = 0.0;
+        bool success = true;         // 致命文件/IO错误为false；strict坏行仍抛异常
+        uint64_t error_count = 0;     // 全部错误行/致命错误数，不受详情上限影响
+        bool errors_truncated = false;
+        size_t error_bytes = 0;       // 保留对象及字符串内容；不含allocator额外开销
     };
 
     ImportPipeline() = default;
@@ -63,11 +68,18 @@ public:
     //   5. 不要用"一把大锁锁住全部操作"的方式实现
     void shutdown(std::chrono::milliseconds timeout);
 
-    // ---- 统计信息 ----
+    // ---- 同步导入结束或抛出异常后查询；Part A不承诺并发查询安全 ----
     Stats stats() const;
 
 private:
-    void validateAndCollect(Row& row, size_t line_number, Result& result);
+    void validateAndCollect(const Row& row, uint64_t line_number,
+                            const std::string& raw_line, Result& result);
+    size_t detailBudget(const Result& result) const;
+    void collectError(uint64_t line_number, const std::string& raw_line,
+                      FieldValidator::ValidationResult details, Result& result);
+    void collectError(uint64_t line_number, const std::string& raw_line,
+                      ErrorCode code, const std::string& message, Result& result,
+                      bool raw_line_truncated = false);
 
     Config cfg_;
     std::vector<FieldRule> rules_;
@@ -75,9 +87,9 @@ private:
 
     // ---- 热路径统计计数器 ----
     // 供 importStreaming 的后台线程在每行处理时递增。
-    std::atomic<size_t> hot_total_lines_ = 0;
-    std::atomic<size_t> hot_rows_imported_ = 0;
-    std::atomic<size_t> hot_rows_skipped_ = 0;
+    std::atomic<uint64_t> hot_total_lines_ = 0;
+    std::atomic<uint64_t> hot_rows_imported_ = 0;
+    std::atomic<uint64_t> hot_rows_skipped_ = 0;
 
     // ---- 停止标志 ----
     std::atomic<bool> stop_requested_ = false;
