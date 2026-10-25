@@ -10,7 +10,7 @@
 - 新增的 [.gitattributes](../.gitattributes) 仅用于禁止 Git 转换 CSV 样本换行符；仓库本地关闭自动换行转换。
 - 既有忽略规则仍生效：构建产物、聊天记录和 `third_party/` 不属于此提交。随附 GoogleTest 自身仓库的版本为 `f8d7d77`，本地仍在原处。
 - 本地排除约 1 GB 性能数据及生成报告，没有删除它们。10 万行样本已纳入初始提交。
-- 未提供远程地址，本轮没有推送。此审查报告及证据在初始提交之后生成，保持为待提交文档。
+- 初始源码与报告已分别提交为 `74ddb98` 和 `89f422e` 并推送。随后按仓库发布范围取消跟踪本地测试、样本及机器专用文件；本报告记录的行为仍对应初始基线，相关样本链接指向该历史版本。
 
 ## 运行证据与限制
 
@@ -298,13 +298,13 @@
 
 ### GBK 样本不能证明合法字符被逗号拆开
 
-[data/sample_gbk.csv](../data/sample_gbk.csv) 中存在 `D4 2C`。严格 CP936 解码在索引 47 报错。合法 GBK 双字节尾字节不包含默认逗号 `2C`；`81 7C` 则是有效字符，因此 A08 使用可作为尾字节的自定义分隔符 `|` 构造合法情形。不能为了把非法样本“拼回四列”而误吞真正的逗号。
+[data/sample_gbk.csv](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/data/sample_gbk.csv) 中存在 `D4 2C`。严格 CP936 解码在索引 47 报错。合法 GBK 双字节尾字节不包含默认逗号 `2C`；`81 7C` 则是有效字符，因此 A08 使用可作为尾字节的自定义分隔符 `|` 构造合法情形。不能为了把非法样本“拼回四列”而误吞真正的逗号。
 
 双字节解码范围可参照 [WHATWG Encoding Standard 的 gb18030 解码算法](https://encoding.spec.whatwg.org/#gb18030-decoder)，GBK 使用其相应双字节规则。运行时字节验证见观察 JSON。
 
 ### CRLF 样本和断言不一致
 
-[data/sample_crlf.csv](../data/sample_crlf.csv) 当前为 64 字节，**CR 数量 0、LF 数量 4**；表头 5 列，数据 3 列。测试却要求字段为 `has_cr\r`，样本实际只有 `has_cr`。该失败不能证明解析器丢了一个本来存在的 CR。
+[data/sample_crlf.csv](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/data/sample_crlf.csv) 当前为 64 字节，**CR 数量 0、LF 数量 4**；表头 5 列，数据 3 列。测试却要求字段为 `has_cr\r`，样本实际只有 `has_cr`。该失败不能证明解析器丢了一个本来存在的 CR。
 
 正常 CRLF/LF 混用可由当前末尾去 CR 逻辑处理。若要验证字段本身含 CR，应构造明确引用的字段，例如 `"has_cr\r",x\r\n`。没有引用的 `has_cr\r\n` 默认应解释为 CRLF 行结束，不能通过删除正常 CRLF 处理来迎合错误断言。
 
@@ -319,7 +319,7 @@
 
 ### 其他测试覆盖缺口
 
-- [test_parser.cpp](../tests/test_parser.cpp) 的 EmptyFile 实际测试不存在文件，没有覆盖真正的零字节文件。
+- [test_parser.cpp](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/tests/test_parser.cpp) 的 EmptyFile 实际测试不存在文件，没有覆盖真正的零字节文件。
 - 正常 UTF-8 样本全部是 ASCII，未验证中文、BOM或非法 UTF-8。
 - 部分测试先 EXPECT 判断非空再直接索引；EXPECT 不会终止执行，回归时测试本身可能越界，应使用适当的 ASSERT。
 - 并发测试存在无结果断言、只读不写的情况，不能证明真实后台导入或读写线程安全；停止用例缺少实际任务、耗时和完成量约束。

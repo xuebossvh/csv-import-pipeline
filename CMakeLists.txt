@@ -7,7 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # -------------------- options --------------------
 option(ENABLE_ASAN "Build with AddressSanitizer (MSVC x64 only)" OFF)
-option(BUILD_TESTS "Build unit tests" ON)
+option(BUILD_TESTS "Build local unit tests (requires tests and bundled GoogleTest)" OFF)
 option(BUILD_BENCH "Build benchmarks" ON)
 
 # -------------------- library --------------------
@@ -83,11 +83,13 @@ if(BUILD_BENCH)
 
     # 默认运行参数：csvp_bench sample_utf8.csv 3 output.txt
     # 直接使用源码目录下的 data，避免把大文件拷到编译目录。
-    set_target_properties(csvp_bench PROPERTIES
-        VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data"
-        VS_DEBUGGER_COMMAND_ARGUMENTS "sample_utf8.csv 3 output.txt"
-        DEBUGGER_WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data"
-    )
+    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data/sample_utf8.csv")
+        set_target_properties(csvp_bench PROPERTIES
+            VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data"
+            VS_DEBUGGER_COMMAND_ARGUMENTS "sample_utf8.csv 3 output.txt"
+            DEBUGGER_WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data"
+        )
+    endif()
 
     # 优化级别跟随构建配置（CMAKE_CXX_FLAGS_RELEASE 已含 /O2，Debug 为 /Od），
     # 不要在这里显式加 /O2，否则与 Debug 默认的 /RTC1 冲突：

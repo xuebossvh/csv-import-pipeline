@@ -2,6 +2,14 @@
 
 一个轻量级的 CSV 数据导入与校验管道库，基于 `fast-cpp-csv-parser` 的设计思路改编。
 
+## 仓库发布范围
+
+本仓库保留核心库、压测程序、CMake 配置和审查文档。
+`data/`、`tests/`、`third_party/`、Cursor 配置和 `build_msvc.bat`
+作为本地练习资料或机器专用文件，不再跟踪；取消跟踪不会删除本地副本。
+测试与样本仍可在本机使用，新克隆默认只构建核心库和压测程序。
+早期提交中的文件仍保留在 Git 历史中。
+
 ## 功能概述
 
 - CSV 文件解析（支持 UTF-8 / GBK 编码）
@@ -101,17 +109,17 @@
 | 目标 | 内容 |
 |---|---|
 | `csvp` | 静态库，`src/` 三个 .cpp 编译打包，供其余目标链接 |
-| `csvp_tests` | gtest 单元测试，通过 `TEST_DATA_DIR` 宏定位 `data/` 目录 |
-| `csvp_bench` | 命令行压测工具，校验规则固定为 5 列（`id/name/age/score/active`），结果写入 txt 报告；用法见 `data/ReadMe.md` |
+| `csvp_tests` | 可选的本地 gtest 单元测试；需要自行准备测试源码、Google Test 和样本 |
+| `csvp_bench` | 命令行压测工具，校验规则固定为 5 列（`id/name/age/score/active`），结果写入 txt 报告；用法见下文 |
 
-CMake 选项：`BUILD_TESTS`、`BUILD_BENCH` 默认开启，`ENABLE_ASAN` 默认关闭。MSVC 下统一 `/W4 /utf-8 /permissive-`，优化级别跟随 Debug/Release 配置。
+CMake 选项：`BUILD_TESTS` 默认关闭，`BUILD_BENCH` 默认开启，`ENABLE_ASAN` 默认关闭。已有构建缓存中的选项不会被默认值覆盖。MSVC 下统一 `/W4 /utf-8 /permissive-`，优化级别跟随 Debug/Release 配置。
 
 ## 构建要求
 
 - C++17 或更高
 - CMake ≥ 3.16
 - MSVC 2019/2022 或 GCC 8+/Clang 7+
-- Google Test（已内置于 `third_party/googletest`）
+- Google Test（仅开启本地测试时需要，放在 `third_party/googletest`；不随仓库发布）
 
 ## 本机 VS Code 构建
 
@@ -129,31 +137,20 @@ Release 程序生成在 `build/Release/`，Debug 程序生成在 `build/Debug/`�
 
 ## 快速开始
 
-```bash
-# 配置（MSVC）
-cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+按上一节选择配置与构建预设，执行 `CMake: Configure` 和 `CMake: Build`。
+准备符合五列规则的 CSV 文件后，从项目根目录运行：
 
-# 构建
-cmake --build build --config Release -j
+```powershell
+# 将输入和报告路径替换为自己的路径，报告不要与输入指向同一个文件。
+.\build\Release\csvp_bench.exe 'D:\csv-input\input.csv' 3 'D:\csv-output\report.txt'
+```
 
-# 运行测试
-ctest --test-dir build -C Release --output-on-failure
+参数依次为 CSV 路径、重复次数和报告路径；报告的父目录需要已存在。
+Debug 构建使用 `build/Debug/` 中的程序。报告包括成功行数、跳过行数及错误明细。
 
-# 压力复跑（用于发现偶发缺陷）
-build/Release/csvp_tests.exe --gtest_repeat=100 --gtest_shuffle
-
-# ASan 构建
-cmake -S . -B build-asan -G "Visual Studio 17 2022" -A x64 -DENABLE_ASAN=ON
-cmake --build build-asan --config RelWithDebInfo
-set ASAN_OPTIONS=halt_on_error=1
-build-asan/RelWithDebInfo/csvp_tests.exe
-
-# 基准测试（生成 txt 报告便于观察结果，避免 cout 刷屏）
-# 用法：csvp_bench <csv文件> [重复次数] [报告路径.txt]
-build/Release/csvp_bench.exe data/sample_100k.csv 3 data/sample_100k_report.txt
-
-# 报告内容：rows_imported / rows_skipped / 错误行明细（含列号、原始值、错误码）
-# 大文件压测后直接打开 txt 报告即可直观核对，无需从刷屏的 cout 里翻找。
+本地测试需要完整的 `tests/`、`data/` 和 `third_party/googletest/`。
+准备好这些资料后，在 CMake 缓存设置中开启 `BUILD_TESTS`，重新配置和构建，
+再通过 `CMake: Run Tests` 运行。ASan 验证也需要测试资料，并应选择与编译选项兼容的配置。
 
 ## API 速览
 
@@ -193,19 +190,21 @@ std::cout << "Imported: " << result.rows_imported
 
 ## 缺陷定位指引
 
-> 本仓库是有意保留了若干缺陷的**遗留代码**。部分缺陷有失败测试直接暴露，部分**只给出现象描述**（见 `docs/KNOWN_ISSUES.md`），需要你**自己写复现用例**去定位根因。
+> 本仓库是有意保留了若干缺陷的**遗留代码**。已确认问题及验证状态见 [Part A 审查报告](docs/PART_A_AUDIT.md)；本地测试和样本不随当前仓库发布。
 >
 > 所有标 `DISABLED_` 前缀的测试是**隐藏验收用例**——修好后去掉前缀即可验证。
 
 ## 目录结构
 
+下面展示完整的本地练习目录；标记“仅本地”的资料不随 Git 仓库发布。
+
 ```
 csv-import-pipeline/
 ├── CMakeLists.txt
-├── build_msvc.bat             # 一键配置 + 构建（MSVC）
+├── build_msvc.bat             # 仅本地：旧机器专用构建脚本
 ├── README.md
 ├── docs/
-│   ├── KNOWN_ISSUES.md         # ⭐ 已知现象清单（缺陷定位线索）
+│   ├── PART_A_AUDIT.md         # 缺陷审查与验证状态
 │   └── REPORT_TEMPLATE.md      # 交付报告模板
 ├── include/csvp/
 │   ├── parser.h          # CSV 解析器
@@ -217,14 +216,14 @@ csv-import-pipeline/
 │   ├── parser.cpp
 │   ├── validator.cpp
 │   └── pipeline.cpp
-├── tests/
+├── tests/                    # 仅本地
 │   ├── test_parser.cpp
 │   ├── test_validator.cpp
 │   ├── test_pipeline.cpp
 │   └── test_concurrent.cpp
 ├── bench/
 │   └── bench_import.cpp
-└── data/
+└── data/                     # 仅本地
     ├── ReadMe.md              # ⭐ 样本一览与运行方法（含 VS 调试配置）
     ├── sample_utf8.csv       # 正常数据
     ├── sample_noeol.csv      # 无尾换行

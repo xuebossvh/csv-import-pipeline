@@ -12,6 +12,10 @@ build-*/
 .vs/
 .vscode/
 .specstory/
+.cursor/
+.cursorignore
+.cursorindexingignore
+.cursorrules
 *.user
 *.suo
 *.VC.db
@@ -19,6 +23,11 @@ build-*/
 
 # third-party (bundled, not part of submission)
 third_party/
+
+# local exercise assets and machine-specific build helper
+/data/
+/tests/
+/build_msvc.bat
 
 # temp
 *.tmp
