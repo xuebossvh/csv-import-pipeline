@@ -1,0 +1,200 @@
+ASan setup attempts before the final successful validation
+
+CMake build returned with result code: 1, standard output: 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.8s)
+  -- Generating done (0.3s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-debug
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gtest.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gmock.lib
+    pipeline.cpp
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gtest_main.lib
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gmock_main.lib
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    bench_import.cpp
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    test_concurrent.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp_bench.exe
+    test_parser.cpp
+    test_pipeline.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp_tests.exe
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- The CXX compiler identification is MSVC 19.44.35229.0
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- The C compiler identification is MSVC 19.44.35229.0
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working C compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Found Python3: D:/Software/Miniconda/python.exe (found version "3.13.5") found components: Interpreter 
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+  -- Looking for pthread_create in pthreads
+  -- Looking for pthread_create in pthreads - not found
+  -- Looking for pthread_create in pthread
+  -- Looking for pthread_create in pthread - not found
+  -- Found Threads: TRUE  
+  -- Configuring done (33.8s)
+  -- Generating done (0.6s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-release
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    parser.cpp
+    gtest-all.cc
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    gtest-all.cc
+    validator.cpp
+    pipeline.cpp
+    gmock-all.cc
+    Generating Code...
+    Generating Code...
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gtest.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    gtest-all.cc
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    gtest_main.cc
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gtest_main.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gmock.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    bench_import.cpp
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    gmock-all.cc
+    test_parser.cpp
+    gmock_main.cc
+    test_validator.cpp
+    Generating Code...
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp_bench.exe
+    test_pipeline.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gmock_main.lib
+    test_concurrent.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp_tests.exe
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+  Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/CMakeLists.txt
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- The CXX compiler identification is MSVC 19.44.35229.0
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- The C compiler identification is MSVC 19.44.35229.0
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working C compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Found Python3: D:/Software/Miniconda/python.exe (found version "3.13.5") found components: Interpreter 
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+  -- Looking for pthread_create in pthreads
+  -- Looking for pthread_create in pthreads - not found
+  -- Looking for pthread_create in pthread
+  -- Looking for pthread_create in pthread - not found
+  -- Found Threads: TRUE  
+  -- Configuring incomplete, errors occurred!
+  CMake Error at CMakeLists.txt:52 (message):
+    ASan runtime DLL was not found beside
+    D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+  Call Stack (most recent call first):
+    CMakeLists.txt:85 (csvp_copy_asan_runtime)
+  
+  
+D:\Software\VSBuildTools2022\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\CMakeFiles\f764dcae3105ab5084062c148e454d52\csv-v11-asan.rule;D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\CMakeLists.txt' exited with code 1. [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj], error output: 
+
+CMake build returned with result code: 1, standard output: CMake is re-running because D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release/CMakeFiles/generate.stamp is out-of-date.
+  the file 'D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/v11-delivery.cmake'
+  is newer than 'D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+-- Configuring done (0.5s)
+-- Generating done (0.4s)
+-- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- The CXX compiler identification is MSVC 19.44.35229.0
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- The C compiler identification is MSVC 19.44.35229.0
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working C compiler: D:/Software/VSBuildTools2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/cl.exe - skipped
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Found Python3: D:/Software/Miniconda/python.exe (found version "3.13.5") found components: Interpreter 
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+  -- Looking for pthread_create in pthreads
+  -- Looking for pthread_create in pthreads - not found
+  -- Looking for pthread_create in pthread
+  -- Looking for pthread_create in pthread - not found
+  -- Found Threads: TRUE  
+  -- Configuring done (34.7s)
+  -- Generating done (0.6s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-asan-x86
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    parser.cpp
+    gtest-all.cc
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    gtest-all.cc
+    validator.cpp
+    pipeline.cpp
+    gmock-all.cc
+    Generating Code...
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    Generating Code...
+    gtest-all.cc
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    gtest_main.cc
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock.lib
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest_main.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    bench_import.cpp
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    gmock-all.cc
+    test_parser.cpp
+    gmock_main.cc
+    test_validator.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_bench.exe
+    Generating Code...
+    test_pipeline.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock_main.lib
+    test_concurrent.cpp
+    Generating Code...
+gtest.lib(gtest-all.obj) : error LNK2038: mismatch detected for 'annotate_string': value '0' doesn't match value '1' in test_parser.obj [D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\csvp_tests.vcxproj] [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj]
+gtest.lib(gtest-all.obj) : error LNK2038: mismatch detected for 'annotate_vector': value '0' doesn't match value '1' in test_parser.obj [D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\csvp_tests.vcxproj] [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj]
+gtest_main.lib(gtest_main.obj) : error LNK2038: mismatch detected for 'annotate_string': value '0' doesn't match value '1' in test_parser.obj [D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\csvp_tests.vcxproj] [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj]
+gtest_main.lib(gtest_main.obj) : error LNK2038: mismatch detected for 'annotate_vector': value '0' doesn't match value '1' in test_parser.obj [D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\csvp_tests.vcxproj] [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj]
+D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_tests.exe : fatal error LNK1319: 4 mismatches detected [D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\csvp_tests.vcxproj] [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj]
+D:\Software\VSBuildTools2022\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\CMakeFiles\f764dcae3105ab5084062c148e454d52\csv-v11-asan.rule' exited with code 1. [D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\build\vs2022-x64-release\csv-v11-asan.vcxproj], error output: LessonCode dir

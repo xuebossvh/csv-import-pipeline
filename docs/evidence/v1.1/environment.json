@@ -1,0 +1,12 @@
+{
+    "OS":  "Microsoft Windows NT 10.0.22623.0",
+    "LogicalProcessors":  12,
+    "CPU":  [
+                {
+                    "Name":  "AMD Ryzen 5 4600U with Radeon Graphics         ",
+                    "NumberOfCores":  6,
+                    "NumberOfLogicalProcessors":  12
+                }
+            ],
+    "Captured":  "2026-10-26T05:14:17.6393663+08:00"
+}

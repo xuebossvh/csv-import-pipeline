@@ -1,0 +1,7 @@
+Snapshot before the final report commit; the v1.1 tag includes that final documentation commit.
+8c2f605 fix: repair Part A CSV parsing and bounded import semantics
+3641191 test: capture pre-fix Debug benchmark and memory baseline
+020fb18 docs: define CSV repair and release acceptance workflow
+0a5c52b chore: exclude local exercise assets and editor files
+89f422e docs: record Part A baseline audit and evidence
+74ddb98 chore: preserve initial CSV import pipeline baseline

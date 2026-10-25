@@ -1,0 +1,11 @@
+CSV Import Pipeline Benchmark
+=============================
+
+  Run 1: 9990000 rows in 8859.23 ms (10000 skipped) [10000 error rows, 200 retained]
+
+--- Summary ---
+File: data/sample_1gb.csv
+Repeats: 1
+Avg time: 8859.23 ms
+Throughput: 1.12764e+06 rows/sec
+Report written to: docs/evidence/v1.1/after-release-1gb-report.txt

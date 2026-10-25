@@ -1,0 +1,30 @@
+[
+    {
+        "Path":  "tests/test_parser.cpp",
+        "SHA256":  "A21DD26740E6F521A546D0767001365A2B4D81DECF63D2412A2A6F508C07D218"
+    },
+    {
+        "Path":  "tests/test_pipeline.cpp",
+        "SHA256":  "36D010575DE30EA63078CDFAE38B0567F18F828A05B5EFAAD5232BBE5410D59F"
+    },
+    {
+        "Path":  "tests/test_validator.cpp",
+        "SHA256":  "F88CDE3744DB100F66C55C0285ECE24BC57A17EA12DDC3631C9D1A802ED1BF4A"
+    },
+    {
+        "Path":  "tests/test_concurrent.cpp",
+        "SHA256":  "7CB2822FA3D511945E248F4894D2A2413AF05F38043976F69D125A20F55430FC"
+    },
+    {
+        "Path":  "tests/test_support.h",
+        "SHA256":  "4F87AF0EE3D89BC8678DFD256E8867DAAE33C5B60EBCF9ADDF172E91D1D63BDD"
+    },
+    {
+        "Path":  "data/sample_gbk.csv",
+        "SHA256":  "8D9E0926359BB16C5AA9117BC680A81D066ADE5CEBE2C4DE87E644174DDD8114"
+    },
+    {
+        "Path":  "data/sample_crlf.csv",
+        "SHA256":  "23A5FBA1E3EAD9EAE7AFFC9A96CC93C6F6B44216F059D40BC604D3FDF0BACDC8"
+    }
+]

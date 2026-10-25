@@ -1,0 +1,143 @@
+CMake build returned with result code: 0, standard output: 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.9s)
+  -- Generating done (0.4s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-debug
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gtest.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gmock.lib
+    parser.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gmock_main.lib
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\lib\Debug\gtest_main.lib
+    pipeline.cpp
+    validator.cpp
+    Generating Code...
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp.lib
+    bench_import.cpp
+    test_concurrent.cpp
+    test_parser.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp_bench.exe
+    test_pipeline.cpp
+    test_validator.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-debug\Debug\csvp_tests.exe
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.7s)
+  -- Generating done (0.4s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-release
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gtest.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gmock.lib
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gmock_main.lib
+    parser.cpp
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\lib\Release\gtest_main.lib
+    pipeline.cpp
+    validator.cpp
+    Generating Code...
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    bench_import.cpp
+    test_concurrent.cpp
+    test_parser.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp_bench.exe
+    test_pipeline.cpp
+    test_validator.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-release\Release\csvp_tests.exe
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.7s)
+  -- Generating done (0.3s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-asan-x86
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock.lib
+    parser.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock_main.lib
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest_main.lib
+    pipeline.cpp
+    validator.cpp
+    Generating Code...
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp.lib
+    bench_import.cpp
+    test_concurrent.cpp
+    test_parser.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_bench.exe
+    test_pipeline.cpp
+    test_validator.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_tests.exe
+适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.7s)
+  -- Generating done (0.4s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Debug\gtest.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Debug\gmock.lib
+    parser.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Debug\gmock_main.lib
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Debug\gtest_main.lib
+    pipeline.cpp
+    validator.cpp
+    Generating Code...
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Debug\csvp.lib
+    bench_import.cpp
+    test_concurrent.cpp
+    test_parser.cpp
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Debug\csvp_bench.exe
+    test_pipeline.cpp
+    test_validator.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Debug\csvp_tests.exe
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    parser.cpp
+    gtest-all.cc
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    gtest-all.cc
+    validator.cpp
+    pipeline.cpp
+    gmock-all.cc
+    Generating Code...
+    Generating Code...
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Release\gtest.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+    gtest-all.cc
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Release\csvp.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+    gtest_main.cc
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Release\gtest_main.lib
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Release\gmock.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    bench_import.cpp
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    gmock-all.cc
+    test_parser.cpp
+    gmock_main.cc
+    test_validator.cpp
+    Generating Code...
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Release\csvp_bench.exe
+    test_pipeline.cpp
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\lib\Release\gmock_main.lib
+    test_concurrent.cpp
+    Generating Code...
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\Release\csvp_tests.exe
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+  Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/CMakeLists.txt, error output: 

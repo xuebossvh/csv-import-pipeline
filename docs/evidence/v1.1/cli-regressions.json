@@ -1,0 +1,110 @@
+[
+    {
+        "Case":  "Smoke",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  1,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 1 rows in 0.3785 ms (0 skipped) [0 error rows, 0 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.3785 ms\r\nThroughput: 2642.01 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "EOF",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  2,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 2 rows in 0.3788 ms (0 skipped) [0 error rows, 0 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.3788 ms\r\nThroughput: 5279.83 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "EscapedQuote",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  2,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 2 rows in 0.3708 ms (0 skipped) [0 error rows, 0 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.3708 ms\r\nThroughput: 5393.74 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "LastQuoted",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  1,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 1 rows in 0.3754 ms (0 skipped) [0 error rows, 0 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.3754 ms\r\nThroughput: 2663.83 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "TrimField",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  1,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 1 rows in 0.3905 ms (0 skipped) [0 error rows, 0 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.3905 ms\r\nThroughput: 2560.82 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "MissingColumn",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  0,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 0 rows in 0.366 ms (1 skipped) [1 error rows, 1 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.366 ms\r\nThroughput: 0 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "NumericOverflow",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  0,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 0 rows in 0.5805 ms (2 skipped) [2 error rows, 2 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.5805 ms\r\nThroughput: 0 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "MissingInput",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  1,
+        "ImportedRows":  null,
+        "InputUnchanged":  false,
+        "Stdout":  "",
+        "Stderr":  "Benchmark failed: Input CSV does not exist or is not a regular file\r\n"
+    },
+    {
+        "Case":  "ReportFailure",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  1,
+        "ImportedRows":  null,
+        "InputUnchanged":  true,
+        "Stdout":  "",
+        "Stderr":  "Benchmark failed: Report parent directory does not exist\r\n"
+    },
+    {
+        "Case":  "SameInputOutput",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  1,
+        "ImportedRows":  null,
+        "InputUnchanged":  true,
+        "Stdout":  "",
+        "Stderr":  "Benchmark failed: Report path must not refer to the input CSV\r\n"
+    },
+    {
+        "Case":  "ColumnMismatch",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  2,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 2 rows in 0.579 ms (1 skipped) [1 error rows, 1 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.579 ms\r\nThroughput: 3454.23 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    },
+    {
+        "Case":  "ParseError",
+        "ExpectedBehaviorSatisfied":  true,
+        "ExitCode":  0,
+        "ImportedRows":  2,
+        "InputUnchanged":  true,
+        "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 2 rows in 0.4029 ms (1 skipped) [1 error rows, 1 retained]\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg time: 0.4029 ms\r\nThroughput: 4964.01 rows/sec\r\nReport written to: report.txt\r\n",
+        "Stderr":  ""
+    }
+]

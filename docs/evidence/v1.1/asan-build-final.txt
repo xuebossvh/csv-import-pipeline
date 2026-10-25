@@ -1,0 +1,29 @@
+CMake build returned with result code: 0, standard output: 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22623.
+  -- Configuring done (0.7s)
+  -- Generating done (0.3s)
+  -- Build files have been written to: D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/v1.1-asan-x86
+  閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.60+43b635718
+  
+    1>Checking Build System
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp.lib
+    gtest-all.cc
+    gtest-all.cc
+    gtest-all.cc
+    gmock-all.cc
+    gmock-all.cc
+    gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_bench.exe
+    Generating Code...
+    gtest_main.cc
+    gmock_main.cc
+    Generating Code...
+    gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock.lib
+    gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gtest_main.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+    csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\RelWithDebInfo\csvp_tests.exe
+    gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\v1.1-asan-x86\lib\RelWithDebInfo\gmock_main.lib
+    Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++椤圭洰/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt, error output: 

@@ -1,0 +1,61 @@
+{
+  "BaselineAverageMs": 37862.6,
+  "FixedDebugAverageMs": 1019.69,
+  "FixedReleaseAverageMs": 62.55633333333333,
+  "SameConfigurationSpeedup": 37.13148113642381,
+  "LargeInput": {
+    "Started": "2026-10-26T05:09:59.3549305+08:00",
+    "Configuration": "Release v1.1",
+    "SourceCommit": "8c2f605",
+    "Binary": "build/v1.1-release/Release/csvp_bench.exe",
+    "BinarySHA256": "1EB1788BEA8321492412B5D3498449E502F1A5E62EFCE996995E2577A5371A69",
+    "InputFile": "data/sample_1gb.csv",
+    "InputBytes": 1003898922,
+    "InputSHA256": "89FA6C306B9730EA71A782DA699C64CEC1EFC6B4097852BB457BC30ABC9477D0",
+    "Repeats": 1,
+    "ExitCode": 0,
+    "TimedOut": false,
+    "WallSeconds": 9.0800714,
+    "CPUSeconds": 8.640625,
+    "PeakWorkingSetBytes": 5726208,
+    "PeakPrivateBytesSampled": 1191936,
+    "SampleMilliseconds": 100,
+    "Samples": 85,
+    "CachePolicy": "Input hash read immediately before launch; OS file cache was not flushed.",
+    "Runs": [
+      {
+        "Run": 1,
+        "RowsImported": 9990000,
+        "Milliseconds": 8859.23,
+        "RowsSkipped": 10000
+      }
+    ]
+  },
+  "TestMatrix": [
+    {
+      "Configuration": "debug",
+      "Declared": 80,
+      "Executed": 79,
+      "Failures": 0,
+      "Disabled": 1,
+      "Errors": 0
+    },
+    {
+      "Configuration": "release",
+      "Declared": 80,
+      "Executed": 79,
+      "Failures": 0,
+      "Disabled": 1,
+      "Errors": 0
+    },
+    {
+      "Configuration": "asan",
+      "Declared": 80,
+      "Executed": 79,
+      "Failures": 0,
+      "Disabled": 1,
+      "Errors": 0
+    }
+  ],
+  "CliPassed": 12
+}

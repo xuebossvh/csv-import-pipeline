@@ -1,0 +1,190 @@
+Configuration: RelWithDebInfo ASan x86
+Binary: build/v1.1-asan-x86/RelWithDebInfo/csvp_tests.exe
+ExitCode: 0
+ASAN_OPTIONS: halt_on_error=1:abort_on_error=1
+
+Running main() from D:\Documents\Documents\BaiduSyncdisk\C++椤圭洰\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\third_party\googletest\googletest\src\gtest_main.cc
+[==========] Running 79 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 30 tests from Parser
+[ RUN      ] Parser.UTF8Basic
+[       OK ] Parser.UTF8Basic (0 ms)
+[ RUN      ] Parser.HeaderMapping
+[       OK ] Parser.HeaderMapping (0 ms)
+[ RUN      ] Parser.NoTrailingNewline
+[       OK ] Parser.NoTrailingNewline (0 ms)
+[ RUN      ] Parser.ReentryState
+[       OK ] Parser.ReentryState (0 ms)
+[ RUN      ] Parser.ChineseGBKEncoding
+[       OK ] Parser.ChineseGBKEncoding (0 ms)
+[ RUN      ] Parser.EmptyFile
+[       OK ] Parser.EmptyFile (4 ms)
+[ RUN      ] Parser.MissingFile
+[       OK ] Parser.MissingFile (1 ms)
+[ RUN      ] Parser.QuotedEscapedQuote
+[       OK ] Parser.QuotedEscapedQuote (0 ms)
+[ RUN      ] Parser.CRLFLFMixedCR
+[       OK ] Parser.CRLFLFMixedCR (0 ms)
+[ RUN      ] Parser.ChineseUtf8AbsolutePathAndContent
+[       OK ] Parser.ChineseUtf8AbsolutePathAndContent (5 ms)
+[ RUN      ] Parser.ReopenAfterFailureClearsOldErrorAndHeader
+[       OK ] Parser.ReopenAfterFailureClearsOldErrorAndHeader (4 ms)
+[ RUN      ] Parser.LastQuotedFieldAndTrailingEmptyField
+[       OK ] Parser.LastQuotedFieldAndTrailingEmptyField (3 ms)
+[ RUN      ] Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces
+[       OK ] Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces (4 ms)
+[ RUN      ] Parser.DisablingTrimPreservesOrdinarySpaces
+[       OK ] Parser.DisablingTrimPreservesOrdinarySpaces (3 ms)
+[ RUN      ] Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue
+[       OK ] Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue (3 ms)
+[ RUN      ] Parser.MaximumLineBoundaryAndOverlongLineRecovery
+[       OK ] Parser.MaximumLineBoundaryAndOverlongLineRecovery (3 ms)
+[ RUN      ] Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows
+[       OK ] Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows (5 ms)
+[ RUN      ] Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter
+[       OK ] Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter (4 ms)
+[ RUN      ] Parser.InvalidGbkDoesNotConsumeARealComma
+[       OK ] Parser.InvalidGbkDoesNotConsumeARealComma (4 ms)
+[ RUN      ] Parser.InvalidUtf8ReportsEncodingErrorAndRecovers
+[       OK ] Parser.InvalidUtf8ReportsEncodingErrorAndRecovers (4 ms)
+[ RUN      ] Parser.ManyBlankLinesAreSkippedWithoutRecursion
+[       OK ] Parser.ManyBlankLinesAreSkippedWithoutRecursion (7 ms)
+[ RUN      ] Parser.ResourceOwnershipAndCountersHaveSafeTypes
+[       OK ] Parser.ResourceOwnershipAndCountersHaveSafeTypes (0 ms)
+[ RUN      ] Parser.RepeatedOpenReadCyclesKeepIndependentResults
+[       OK ] Parser.RepeatedOpenReadCyclesKeepIndependentResults (20 ms)
+[ RUN      ] Parser.Utf8BomIsExcludedFromTheFirstHeaderField
+[       OK ] Parser.Utf8BomIsExcludedFromTheFirstHeaderField (4 ms)
+[ RUN      ] Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable
+[       OK ] Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable (5 ms)
+[ RUN      ] Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives
+[       OK ] Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives (6 ms)
+[ RUN      ] Parser.TruncatedUtf8AndSurrogateEncodingAreRejected
+[       OK ] Parser.TruncatedUtf8AndSurrogateEncodingAreRejected (6 ms)
+[ RUN      ] Parser.Exact65536ByteFinalRecordWithoutNewline
+[       OK ] Parser.Exact65536ByteFinalRecordWithoutNewline (10 ms)
+[ RUN      ] Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField
+[       OK ] Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField (8 ms)
+[ RUN      ] Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte
+[       OK ] Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte (8 ms)
+[----------] 30 tests from Parser (137 ms total)
+
+[----------] 17 tests from Validator
+[ RUN      ] Validator.TypeCheckString
+[       OK ] Validator.TypeCheckString (0 ms)
+[ RUN      ] Validator.TypeCheckInt
+[       OK ] Validator.TypeCheckInt (0 ms)
+[ RUN      ] Validator.TypeCheckDouble
+[       OK ] Validator.TypeCheckDouble (0 ms)
+[ RUN      ] Validator.RequiredField
+[       OK ] Validator.RequiredField (0 ms)
+[ RUN      ] Validator.RangeCheck
+[       OK ] Validator.RangeCheck (0 ms)
+[ RUN      ] Validator.RegexCheck
+[       OK ] Validator.RegexCheck (0 ms)
+[ RUN      ] Validator.MultipleRules
+[       OK ] Validator.MultipleRules (0 ms)
+[ RUN      ] Validator.MissingWholeRequiredColumnsProduceErrors
+[       OK ] Validator.MissingWholeRequiredColumnsProduceErrors (0 ms)
+[ RUN      ] Validator.MissingOptionalColumnDoesNotRequireAValue
+[       OK ] Validator.MissingOptionalColumnDoesNotRequireAValue (0 ms)
+[ RUN      ] Validator.IntegerOverflowAndNumericSuffixesAreRejected
+[       OK ] Validator.IntegerOverflowAndNumericSuffixesAreRejected (0 ms)
+[ RUN      ] Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected
+[       OK ] Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected (0 ms)
+[ RUN      ] Validator.NanCannotBypassRange
+[       OK ] Validator.NanCannotBypassRange (0 ms)
+[ RUN      ] Validator.FractionalIntegerRangeBoundsAreNotTruncated
+[       OK ] Validator.FractionalIntegerRangeBoundsAreNotTruncated (0 ms)
+[ RUN      ] Validator.InvalidRangeRulesAreReported
+[       OK ] Validator.InvalidRangeRulesAreReported (0 ms)
+[ RUN      ] Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong
+[       OK ] Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong (0 ms)
+[ RUN      ] Validator.InvalidRegexIsReportedWithoutThrowing
+[       OK ] Validator.InvalidRegexIsReportedWithoutThrowing (0 ms)
+[ RUN      ] Validator.BooleanValuesAndInvalidBoolean
+[       OK ] Validator.BooleanValuesAndInvalidBoolean (0 ms)
+[----------] 17 tests from Validator (3 ms total)
+
+[----------] 7 tests from Row
+[ RUN      ] Row.InvalidIntegerIsNotSilentlyConvertedToZero
+[       OK ] Row.InvalidIntegerIsNotSilentlyConvertedToZero (0 ms)
+[ RUN      ] Row.IntegerBoundsRemainRepresentable
+[       OK ] Row.IntegerBoundsRemainRepresentable (0 ms)
+[ RUN      ] Row.InvalidDoubleIsNotSilentlyConvertedToZero
+[       OK ] Row.InvalidDoubleIsNotSilentlyConvertedToZero (0 ms)
+[ RUN      ] Row.NonFiniteDoubleIsRejected
+[       OK ] Row.NonFiniteDoubleIsRejected (0 ms)
+[ RUN      ] Row.BooleanConversionDistinguishesFalseFromInvalid
+[       OK ] Row.BooleanConversionDistinguishesFalseFromInvalid (0 ms)
+[ RUN      ] Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues
+[       OK ] Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues (0 ms)
+[ RUN      ] Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber
+[       OK ] Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber (0 ms)
+[----------] 7 tests from Row (0 ms total)
+
+[----------] 22 tests from Pipeline
+[ RUN      ] Pipeline.SyncSmallClean
+[       OK ] Pipeline.SyncSmallClean (0 ms)
+[ RUN      ] Pipeline.MissingFile
+[       OK ] Pipeline.MissingFile (1 ms)
+[ RUN      ] Pipeline.SkipBadRows
+[       OK ] Pipeline.SkipBadRows (0 ms)
+[ RUN      ] Pipeline.ErrorLimit
+[       OK ] Pipeline.ErrorLimit (23 ms)
+[ RUN      ] Pipeline.DefaultErrorLimitBoundsStoredDetails
+[       OK ] Pipeline.DefaultErrorLimitBoundsStoredDetails (8 ms)
+[ RUN      ] Pipeline.ExplicitUnlimitedErrorCollection
+[       OK ] Pipeline.ExplicitUnlimitedErrorCollection (9 ms)
+[ RUN      ] Pipeline.ByteBudgetDoesNotLoseAggregateCounts
+[       OK ] Pipeline.ByteBudgetDoesNotLoseAggregateCounts (3 ms)
+[ RUN      ] Pipeline.LongErrorDetailsRespectByteBudget
+[       OK ] Pipeline.LongErrorDetailsRespectByteBudget (4 ms)
+[ RUN      ] Pipeline.NoHeaderUsesRuleCount
+[       OK ] Pipeline.NoHeaderUsesRuleCount (3 ms)
+[ RUN      ] Pipeline.MissingRequiredSchemaColumnsAreNotAccepted
+[       OK ] Pipeline.MissingRequiredSchemaColumnsAreNotAccepted (3 ms)
+[ RUN      ] Pipeline.ColumnMismatchSkipsAndContinues
+[       OK ] Pipeline.ColumnMismatchSkipsAndContinues (3 ms)
+[ RUN      ] Pipeline.ParseErrorSkipsAndContinues
+[       OK ] Pipeline.ParseErrorSkipsAndContinues (4 ms)
+[ RUN      ] Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors
+[       OK ] Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors (8 ms)
+[ RUN      ] Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace
+[       OK ] Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace (3 ms)
+[ RUN      ] Pipeline.FailedReopenDoesNotRetainPreviousStatistics
+[       OK ] Pipeline.FailedReopenDoesNotRetainPreviousStatistics (4 ms)
+[ RUN      ] Pipeline.StatisticsExcludeHeaderAndBlankLines
+[       OK ] Pipeline.StatisticsExcludeHeaderAndBlankLines (4 ms)
+[ RUN      ] Pipeline.OverlongLineIsReportedAndNextLineStillImports
+[       OK ] Pipeline.OverlongLineIsReportedAndNextLineStillImports (4 ms)
+[ RUN      ] Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull
+[       OK ] Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull (4 ms)
+[ RUN      ] Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics
+[       OK ] Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics (4 ms)
+[ RUN      ] Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata
+[       OK ] Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata (3 ms)
+[ RUN      ] Pipeline.StreamingImportNotImplemented
+[       OK ] Pipeline.StreamingImportNotImplemented (0 ms)
+[ RUN      ] Pipeline.ShutdownNotImplemented
+[       OK ] Pipeline.ShutdownNotImplemented (0 ms)
+[----------] 22 tests from Pipeline (108 ms total)
+
+[----------] 3 tests from Concurrent
+[ RUN      ] Concurrent.ImportAndStats
+[       OK ] Concurrent.ImportAndStats (13 ms)
+[ RUN      ] Concurrent.StatsThreadSafety
+[       OK ] Concurrent.StatsThreadSafety (6 ms)
+[ RUN      ] Concurrent.StatsAtomicRead
+[       OK ] Concurrent.StatsAtomicRead (0 ms)
+[ DISABLED ] Concurrent.DISABLED_ShutdownNoDeadlock
+[----------] 3 tests from Concurrent (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 79 tests from 5 test suites ran. (272 ms total)
+[  PASSED  ] 79 tests.
+
+  YOU HAVE 1 DISABLED TEST
+
+
+STDERR:

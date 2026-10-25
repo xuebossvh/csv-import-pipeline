@@ -1,5 +1,7 @@
 # CSV 项目 Part A 基线缺陷审查
 
+这是初始版本的历史审查；v1.1 的实际修复和验收结果见 [版本报告](REPORT_v1.1.md)。
+
 日期：2026-10-26。源码基线：`74ddb98`，分支 `main`。
 
 本轮保留初始实现，列出 28 项缺陷与边界风险，并给出复现方式、根因、修复建议和证据状态。没有实施业务修复，也没有删除源码中的 `DISABLED_`。静态确认、运行复现和需要故障注入的风险分别标记，不把所有条目都称为已通过测试证明。
@@ -44,7 +46,7 @@
 
 ### A01 最后一行没有换行时被丢弃
 
-优先级：P1。位置：[src/parser.cpp:168](../src/parser.cpp#L168)。
+优先级：P1。位置：[src/parser.cpp:168](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L168)。
 
 - **复现**：无表头输入 `a,b`；或五列表头后放两条正常数据，仅最后一条不带 LF。
 - **根因**：未找到 LF 就返回 false，将有内容的文件尾段当成 EOF。
@@ -53,7 +55,7 @@
 
 ### A02 重复打开文件没有重置完整状态
 
-优先级：P1。位置：[src/parser.cpp:79](../src/parser.cpp#L79)。
+优先级：P1。位置：[src/parser.cpp:79](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L79)。
 
 - **复现**：同一解析器读完一个文件后再读另一个；另测先打开不存在文件再成功打开。
 - **根因**：只清空表头和偏移，未重置行号、累计字节及 last_error。
@@ -62,7 +64,7 @@
 
 ### A03 解析器重用时泄漏旧缓冲区
 
-优先级：P1。位置：[src/parser.cpp:73](../src/parser.cpp#L73)。
+优先级：P1。位置：[src/parser.cpp:73](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L73)。
 
 - **复现**：同一对象连续两次成功调用 parse；各分配 16 MiB。
 - **根因**：第二次 malloc 直接覆盖第一次指针，析构只能释放最后一块。
@@ -71,7 +73,7 @@
 
 ### A04 默认复制导致文件和缓冲区双重释放
 
-优先级：P1。位置：[include/csvp/parser.h:23](../include/csvp/parser.h#L23)。
+优先级：P1。位置：[include/csvp/parser.h:23](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/include/csvp/parser.h#L23)。
 
 - **复现**：打开文件后执行 `CsvParser b = a`，让两个对象先后析构。
 - **根因**：类拥有 FILE* 和 malloc 指针、自定义析构，但仍允许默认浅拷贝。
@@ -80,7 +82,7 @@
 
 ### A05 双引号转义被提前闭合
 
-优先级：P1。位置：[src/parser.cpp:250](../src/parser.cpp#L250)。
+优先级：P1。位置：[src/parser.cpp:250](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L250)。
 
 - **复现**：输入含 `1,"A""B",25,90,true`，后面再放一条正常记录。
 - **根因**：遇到任意双引号就结束引号字段，没有处理连续两个双引号。
@@ -89,7 +91,7 @@
 
 ### A06 最后一个字段带引号时多出空列
 
-优先级：P1。位置：[src/parser.cpp:210](../src/parser.cpp#L210)。
+优先级：P1。位置：[src/parser.cpp:210](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L210)。
 
 - **复现**：输入 `1,Alice,25,90,"true"`。
 - **根因**：引号分支已提交字段，循环结束后又因 pos>0 追加空字符串。
@@ -98,7 +100,7 @@
 
 ### A07 中间字段的尾部空格未按配置修剪
 
-优先级：P2。位置：[src/parser.cpp:216](../src/parser.cpp#L216)。
+优先级：P2。位置：[src/parser.cpp:216](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L216)。
 
 - **复现**：开启 trim_spaces，输入 `1,Alice,25 ,90,true`。
 - **根因**：逗号分支直接提交普通字段，尾部修剪仅在最后字段执行。
@@ -107,7 +109,7 @@
 
 ### A08 编码配置没有阻止合法 GBK 字符被自定义分隔符切开
 
-优先级：P1。位置：[src/parser.cpp:186](../src/parser.cpp#L186)。
+优先级：P1。位置：[src/parser.cpp:186](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L186)。
 
 - **复现**：设 encoding=GBK、delimiter='|'、has_header=false，输入字节 `81 7C 7C 78 0A`；应为 GBK 字符 `81 7C` 与 x 两列。
 - **根因**：按单字节判断分隔符，未使用编码配置识别双字节序列。
@@ -116,7 +118,7 @@
 
 ### A09 Windows 中文路径的字符编码不一致
 
-优先级：P1。位置：[src/parser.cpp:60](../src/parser.cpp#L60)。
+优先级：P1。位置：[src/parser.cpp:60](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L60)。
 
 - **复现**：将含中文的绝对路径按 UTF-8 编码交给当前窄字符 fopen_s；与同一路径按本机 CP936 编码比较。
 - **根因**：编译选项 /utf-8 使 TEST_DATA_DIR 字面量为 UTF-8，而本机窄文件接口按代码页 936 解释；文件存在也打不开。
@@ -125,7 +127,7 @@
 
 ### A10 跳过坏行模式仍被列数错误中止
 
-优先级：P1。位置：[src/pipeline.cpp:43](../src/pipeline.cpp#L43)。
+优先级：P1。位置：[src/pipeline.cpp:43](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L43)。
 
 - **复现**：五列表头，正常行、六列坏行、正常行；skip_bad_rows=true。
 - **根因**：列数检查直接抛异常，处于统一校验错误处理入口之外。
@@ -134,7 +136,7 @@
 
 ### A11 解析失败被当成正常 EOF
 
-优先级：P1。位置：[src/pipeline.cpp:39](../src/pipeline.cpp#L39)。
+优先级：P1。位置：[src/pipeline.cpp:39](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L39)。
 
 - **复现**：正常行之后放 `2,"broken,30,80,false`，下一行再放合法记录。
 - **根因**：readRow 的 false 同时表示结束与错误，管道直接结束循环且不检查错误状态。
@@ -143,7 +145,7 @@
 
 ### A12 无表头导入配置不可用
 
-优先级：P1。位置：[src/pipeline.cpp:43](../src/pipeline.cpp#L43)。
+优先级：P1。位置：[src/pipeline.cpp:43](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L43)。
 
 - **复现**：has_header=false，文件 `1,Alice\n`，配置两条字段规则。
 - **根因**：仍用空 header 的长度 0 作为期望列数。
@@ -152,7 +154,7 @@
 
 ### A13 数值访问器无法区分非法输入与真实零
 
-优先级：P1。位置：[include/csvp/row.h:38](../include/csvp/row.h#L38)。
+优先级：P1。位置：[include/csvp/row.h:38](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/include/csvp/row.h#L38)。
 
 - **复现**：分别转换 `0`、`N/A`、空字符串、越界列、溢出整数、`12abc` 和 `1.5abc`。
 - **根因**：整数失败统一返回 0；atof 没有状态返回；未检查完整消费字符串。非法 bool 同样与 false 混淆。
@@ -161,7 +163,7 @@
 
 ### A14 数值校验接受溢出并允许 NaN 绕过范围
 
-优先级：P1。位置：[src/validator.cpp:91](../src/validator.cpp#L91)。
+优先级：P1。位置：[src/validator.cpp:91](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/validator.cpp#L91)。
 
 - **复现**：Int 输入很长的 999…，Double 输入 1e9999；另测 Double 范围 [0,100] 的 nan。
 - **根因**：strtol/strtod 只检查末尾指针，忽略 ERANGE；NaN 与上下界比较均为 false。
@@ -170,7 +172,7 @@
 
 ### A15 整数范围边界被截断或转换越界
 
-优先级：P2。位置：[src/validator.cpp:130](../src/validator.cpp#L130)。
+优先级：P2。位置：[src/validator.cpp:130](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/validator.cpp#L130)。
 
 - **复现**：Int 范围 [1.5,10] 输入 1；范围 [-10,-1.5] 输入 -1；再考虑超出 long 范围或非有限边界。
 - **根因**：将 double 范围端点直接转 long，改变数学边界；越界浮点转整数还可能产生未定义行为。
@@ -179,7 +181,7 @@
 
 ### A16 整列缺失时必填规则不执行
 
-优先级：P1。位置：[src/validator.cpp:19](../src/validator.cpp#L19)。
+优先级：P1。位置：[src/validator.cpp:19](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/validator.cpp#L19)。
 
 - **复现**：默认五条规则导入 `id\n1\n`；或用必填 id/name 规则校验只有 id 的 Row。
 - **根因**：仅校验 min(行字段数,规则数)，缺失的规则列被忽略；表头与数据同为一列时管道也放行。
@@ -188,7 +190,7 @@
 
 ### A17 统计来源不一致且失败重试残留旧统计
 
-优先级：P2。位置：[src/pipeline.cpp:191](../src/pipeline.cpp#L191)。
+优先级：P2。位置：[src/pipeline.cpp:191](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L191)。
 
 - **复现**：同步导入正常文件后对比 Result 和 stats；随后用同一管道打开不存在文件。
 - **根因**：stats 无条件用未更新的原子计数覆盖同步计数；统计重置放在打开文件成功之后。
@@ -197,7 +199,7 @@
 
 ### A18 压测错误详情没有实际内存上限
 
-优先级：P1 风险。位置：[bench/bench_import.cpp:118](../bench/bench_import.cpp#L118)。
+优先级：P1 风险。位置：[bench/bench_import.cpp:118](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/bench/bench_import.cpp#L118)。
 
 - **复现**：使用大量列数正确但字段类型非法的行；避免先触发列数异常。
 - **根因**：error_limit=0 按现有契约表示无限；bench 未改该默认值，导入结束后才复制最多 200 条报告样本。
@@ -206,7 +208,7 @@
 
 ### A19 每行重读大缓冲导致严重性能退化
 
-优先级：P1。位置：[src/parser.cpp:152](../src/parser.cpp#L152)。
+优先级：P1。位置：[src/parser.cpp:152](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L152)。
 
 - **复现**：用多条短行观察：每次 fread 最多约 16 MiB，但下一次文件偏移只增加一行长度。
 - **根因**：已读到的后续行没有被复用；每行重新定位、读取、复制大量相同数据。
@@ -215,7 +217,7 @@
 
 ### A20 int 行号不能覆盖超大行数
 
-优先级：P1 边界风险。位置：[include/csvp/parser.h:78](../include/csvp/parser.h#L78)。
+优先级：P1 边界风险。位置：[include/csvp/parser.h:78](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/include/csvp/parser.h#L78)。
 
 - **复现**：从接近 INT_MAX 的计数开始递增，或处理超过该上限的物理行。
 - **根因**：行号成员及接口为 int，越界有符号加法属于未定义行为；RowError 使用 size_t 不能补救此前溢出。
@@ -224,7 +226,7 @@
 
 ### A21 Windows 文件定位截断到 32 位 long
 
-优先级：P1 边界风险。位置：[src/parser.cpp:152](../src/parser.cpp#L152)。
+优先级：P1 边界风险。位置：[src/parser.cpp:152](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L152)。
 
 - **复现**：文件读取偏移达到或超过 2 GiB。
 - **根因**：Windows x64 的 long 仍为 32 位；size_t 转 long 后传 fseek，且未检查返回值。
@@ -233,7 +235,7 @@
 
 ### A22 超长行或嵌入 NUL 可能静默截断
 
-优先级：P1。位置：[src/parser.cpp:162](../src/parser.cpp#L162)。
+优先级：P1。位置：[src/parser.cpp:162](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L162)。
 
 - **复现**：无表头，放入 2^24−1 个 A 后再接 LF；另测含 NUL 的输入。
 - **根因**：缓冲内没有找到 LF 就返回 false；C 字符串搜索在 NUL 处提前停止，没有明确区分超长/非法输入/EOF。
@@ -242,7 +244,7 @@
 
 ### A23 文件大小定位和读取失败未完整处理
 
-优先级：P1 边界风险。位置：[src/parser.cpp:24](../src/parser.cpp#L24)。
+优先级：P1 边界风险。位置：[src/parser.cpp:24](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L24)。
 
 - **复现**：对文件大小查询、fseek、fread 注入失败；POSIX 分支让 fstat 失败。
 - **根因**：忽略系统返回值，负大小可能转巨大 size_t；fstat 失败后可能读未初始化结构；未检查 ferror。
@@ -251,7 +253,7 @@
 
 ### A24 连续空行通过递归处理可能耗尽栈
 
-优先级：P1 边界风险。位置：[src/parser.cpp:125](../src/parser.cpp#L125)。
+优先级：P1 边界风险。位置：[src/parser.cpp:125](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/parser.cpp#L125)。
 
 - **复现**：大量连续 LF 后接一条正常记录。
 - **根因**：每跳过一个空行就递归一次；Debug 下不能依赖尾调用优化。
@@ -260,7 +262,7 @@
 
 ### A25 错误报告的原始行被重新拼接改写
 
-优先级：P2。位置：[src/pipeline.cpp:88](../src/pipeline.cpp#L88)。
+优先级：P2。位置：[src/pipeline.cpp:88](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L88)。
 
 - **复现**：分号分隔输入 `1;"Alice;Smith";N/A`，触发字段错误。
 - **根因**：用逗号重拼已解析字段，丢失原分隔符、引号、转义及被修剪的空白。
@@ -269,7 +271,7 @@
 
 ### A26 输入无法打开仍正常退出
 
-优先级：P2。位置：[bench/bench_import.cpp:134](../bench/bench_import.cpp#L134)。
+优先级：P2。位置：[bench/bench_import.cpp:134](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/bench/bench_import.cpp#L134)。
 
 - **复现**：输入一个不存在的 CSV 路径。
 - **根因**：管道把致命失败放入普通错误结果，bench 没有区分不能启动的导入与可跳过坏行。
@@ -278,7 +280,7 @@
 
 ### A27 报告保存失败却宣告成功
 
-优先级：P2。位置：[bench/bench_import.cpp:68](../bench/bench_import.cpp#L68)。
+优先级：P2。位置：[bench/bench_import.cpp:68](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/bench/bench_import.cpp#L68)。
 
 - **复现**：有效输入，报告路径位于不存在的父目录。
 - **根因**：打开失败只打印错误并 return，调用方仍输出 Report written to；最终写入/关闭状态也未检查。
@@ -287,7 +289,7 @@
 
 ### A28 报告与输入同文件会覆盖原 CSV
 
-优先级：P1。位置：[bench/bench_import.cpp:68](../bench/bench_import.cpp#L68)。
+优先级：P1。位置：[bench/bench_import.cpp:68](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/bench/bench_import.cpp#L68)。
 
 - **复现**：仅用临时副本，把第一和第三参数都设为该副本路径。
 - **根因**：ofstream 的 trunc 会截断输入文件，缺少文件等价性检查。
@@ -310,7 +312,7 @@
 
 ### ErrorLimit 不能以通过或跳过代替有效断言
 
-现有普通字段错误数量上限位于 [pipeline.cpp:97](../src/pipeline.cpp#L97)，并非没有实现。验收应使用列数正确、错误数明确超过 cap 的数据，同时断言：
+现有普通字段错误数量上限位于 [pipeline.cpp:97](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L97)，并非没有实现。验收应使用列数正确、错误数明确超过 cap 的数据，同时断言：
 
 1. 所有应处理行都被处理。
 2. 成功数、跳过数准确。
@@ -327,9 +329,9 @@
 
 ## 额外待处理事项与范围边界
 
-- [pipeline.cpp:117](../src/pipeline.cpp#L117) 的异常分支创建 RowError 后没有加入结果，也未保留异常消息。普通现有校验路径较难触发该 runtime_error 分支，需故障注入后再给运行结论。
-- [bench_import.cpp:190](../bench/bench_import.cpp#L190) 使用 atoi，`abc` 被当作 1 次，`3abc` 被当作 3 次，溢出缺少处理；应严格校验重复次数。
-- [validator.cpp:155](../src/validator.cpp#L155) 每个字段重复构造正则，属于条件性性能问题；默认压测规则没有正则，不能把它当作本次大文件瓶颈。
+- [pipeline.cpp:117](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/pipeline.cpp#L117) 的异常分支创建 RowError 后没有加入结果，也未保留异常消息。普通现有校验路径较难触发该 runtime_error 分支，需故障注入后再给运行结论。
+- [bench_import.cpp:190](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/bench/bench_import.cpp#L190) 使用 atoi，`abc` 被当作 1 次，`3abc` 被当作 3 次，溢出缺少处理；应严格校验重复次数。
+- [validator.cpp:155](https://github.com/xuebossvh/csv-import-pipeline/blob/74ddb98076e25c75ee40be112ee87458d19383aa/src/validator.cpp#L155) 每个字段重复构造正则，属于条件性性能问题；默认压测规则没有正则，不能把它当作本次大文件瓶颈。
 - 头部编码标记、嵌入 NUL、非法编码和是否允许字段内换行需要明确契约；已声明“不支持跨行引号字段”，不把尚未承诺的支持当作已实现功能。
 - importStreaming 与 shutdown 按题意属于 Part B 骨架，本轮未实现。三个相邻热路径原子计数器尚未被真实并发写入，不能据此断言当前慢是 false sharing。
 

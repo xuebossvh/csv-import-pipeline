@@ -1,0 +1,162 @@
+CMake test returned with result code: 0, standard output:    Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 5: V11.After100k
+1/1 Test #5: V11.After100k ....................   Passed    6.72 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   6.74 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 3: V11.ASan
+1/1 Test #3: V11.ASan .........................   Passed    3.81 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.82 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 18: V11.CLI.ColumnMismatch
+1/1 Test #18: V11.CLI.ColumnMismatch ...........   Passed    3.50 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.52 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 9: V11.CLI.EOF
+1/1 Test #9: V11.CLI.EOF ......................   Passed    3.10 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.12 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 10: V11.CLI.EscapedQuote
+1/1 Test #10: V11.CLI.EscapedQuote .............   Passed    3.16 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.18 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 11: V11.CLI.LastQuoted
+1/1 Test #11: V11.CLI.LastQuoted ...............   Passed    3.22 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.24 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 13: V11.CLI.MissingColumn
+1/1 Test #13: V11.CLI.MissingColumn ............   Passed    3.05 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.07 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 15: V11.CLI.MissingInput
+1/1 Test #15: V11.CLI.MissingInput .............   Passed    3.09 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.10 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 14: V11.CLI.NumericOverflow
+1/1 Test #14: V11.CLI.NumericOverflow ..........   Passed    3.19 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.20 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 19: V11.CLI.ParseError
+1/1 Test #19: V11.CLI.ParseError ...............   Passed    3.11 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.13 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 16: V11.CLI.ReportFailure
+1/1 Test #16: V11.CLI.ReportFailure ............   Passed    3.12 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.14 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 17: V11.CLI.SameInputOutput
+1/1 Test #17: V11.CLI.SameInputOutput ..........   Passed    3.09 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.11 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 8: V11.CLI.Smoke
+1/1 Test #8: V11.CLI.Smoke ....................   Passed    3.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.02 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 12: V11.CLI.TrimField
+1/1 Test #12: V11.CLI.TrimField ................   Passed    3.02 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.04 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 1: V11.Debug
+1/1 Test #1: V11.Debug ........................   Passed    3.31 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.32 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 7: V11.Memory1GB
+1/1 Test #7: V11.Memory1GB ....................   Passed   13.69 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  13.71 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 2: V11.Release
+1/1 Test #2: V11.Release ......................   Passed    3.47 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.49 sec
+   Site: csvp-v11-validation
+   Build name: explicit-per-test-configuration
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 6: V11.Release100k
+1/1 Test #6: V11.Release100k ..................   Passed    3.65 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.67 sec, error output: 

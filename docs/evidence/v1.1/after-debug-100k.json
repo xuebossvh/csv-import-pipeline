@@ -1,0 +1,40 @@
+{
+    "Started":  "2026-10-26T05:09:02.6744541+08:00",
+    "Configuration":  "Debug v1.1",
+    "SourceCommit":  "8c2f605",
+    "Binary":  "build/v1.1-debug/Debug/csvp_bench.exe",
+    "BinarySHA256":  "559CDB8E07B1CF841437E625D028CF7730FF7342A8FF8C99FE45A9487BE901A6",
+    "InputFile":  "data/sample_100k.csv",
+    "InputBytes":  3146588,
+    "InputSHA256":  "2A763206890D9A63453FED96410586F2613FDC3CEA413AE7F2B5F766091F9956",
+    "Repeats":  3,
+    "ExitCode":  0,
+    "TimedOut":  false,
+    "WallSeconds":  3.3638537,
+    "CPUSeconds":  3.046875,
+    "PeakWorkingSetBytes":  7163904,
+    "PeakPrivateBytesSampled":  1757184,
+    "SampleMilliseconds":  100,
+    "Samples":  30,
+    "CachePolicy":  "Input hash read immediately before launch; OS file cache was not flushed.",
+    "Runs":  [
+                 {
+                     "Run":  1,
+                     "RowsImported":  98000,
+                     "Milliseconds":  1018.85,
+                     "RowsSkipped":  2000
+                 },
+                 {
+                     "Run":  2,
+                     "RowsImported":  98000,
+                     "Milliseconds":  1020.99,
+                     "RowsSkipped":  2000
+                 },
+                 {
+                     "Run":  3,
+                     "RowsImported":  98000,
+                     "Milliseconds":  1019.23,
+                     "RowsSkipped":  2000
+                 }
+             ]
+}
