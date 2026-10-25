@@ -1,0 +1,104 @@
+CMake test returned with result code: -1, standard output:    Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 37: Audit.ColumnMismatch
+1/1 Test #37: Audit.ColumnMismatch .............***Failed    3.77 sec
+{
+    "Case":  "ColumnMismatch",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  1,
+    "ImportedRows":  null,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n",
+    "Stderr":  "Benchmark failed: Column count mismatch at line 3: expected 5 columns, got 6\r\n"
+}
+FAIL: expected safe/correct behavior was not satisfied for ColumnMismatch
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.79 sec
+
+The following tests FAILED:
+	 37 - Audit.ColumnMismatch (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 29: Audit.LastQuoted
+1/1 Test #29: Audit.LastQuoted .................***Failed    3.30 sec
+{
+    "Case":  "LastQuoted",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  1,
+    "ImportedRows":  null,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n",
+    "Stderr":  "Benchmark failed: Column count mismatch at line 2: expected 5 columns, got 6\r\n"
+}
+FAIL: expected safe/correct behavior was not satisfied for LastQuoted
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.33 sec
+
+The following tests FAILED:
+	 29 - Audit.LastQuoted (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 38: Audit.ParseError
+1/1 Test #38: Audit.ParseError .................***Failed    3.41 sec
+{
+    "Case":  "ParseError",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  1,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 1 rows in 4.0309 ms\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg rows: 1\r\nAvg time: 4.0309 ms\r\nThroughput: 248 rows/sec\r\n\r\nReport written to: report.txt\r\n",
+    "Stderr":  ""
+}
+FAIL: expected safe/correct behavior was not satisfied for ParseError
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.43 sec
+
+The following tests FAILED:
+	 38 - Audit.ParseError (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 34: Audit.ReportFailure
+1/1 Test #34: Audit.ReportFailure ..............***Failed    3.43 sec
+{
+    "Case":  "ReportFailure",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  1,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 1 rows in 5.5076 ms\r\n\r\n--- Summary ---\r\nFile: input.csv\r\nRepeats: 1\r\nAvg rows: 1\r\nAvg time: 5.5076 ms\r\nThroughput: 181 rows/sec\r\n\r\nReport written to: missing-parent/report.txt\r\n",
+    "Stderr":  "Cannot open report file: missing-parent/report.txt\r\n"
+}
+FAIL: expected safe/correct behavior was not satisfied for ReportFailure
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.47 sec
+
+The following tests FAILED:
+	 34 - Audit.ReportFailure (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 26: Audit.Smoke
+1/1 Test #26: Audit.Smoke ......................   Passed    3.36 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.38 sec, error output: Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest

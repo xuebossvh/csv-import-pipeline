@@ -1,0 +1,249 @@
+CMake test returned with result code: -1, standard output:    Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 27: Audit.EOF
+1/1 Test #27: Audit.EOF ........................***Failed    3.36 sec
+{
+    "Case":  "EOF",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  1,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 1 rows in 4.7695 ms\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 1\nAvg time: 4.7695 ms\nThroughput: 209 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for EOF
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.38 sec
+
+The following tests FAILED:
+	 27 - Audit.EOF (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 28: Audit.EscapedQuote
+1/1 Test #28: Audit.EscapedQuote ...............***Failed    3.31 sec
+{
+    "Case":  "EscapedQuote",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  0,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 0 rows in 4.2709 ms\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 0\nAvg time: 4.2709 ms\nThroughput: 0 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for EscapedQuote
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.33 sec
+
+The following tests FAILED:
+	 28 - Audit.EscapedQuote (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 29: Audit.LastQuoted
+1/1 Test #29: Audit.LastQuoted .................***Failed    3.36 sec
+csvp_bench.exe : Benchmark failed: Column count mismatch at line 2: expected 5 columns, got 6
+����λ�� D:\Documents\Documents\BaiduSyncdisk\C++��Ŀ\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pi
+peline\build\part_a_audit\probe.ps1:63 �ַ�: 24
++ ... ogramOutput = @(& $benchExe $inputFile 1 $reportFile 2> 'stderr.txt')
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Benchmark faile... columns, got 6:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.38 sec
+
+The following tests FAILED:
+	 29 - Audit.LastQuoted (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 31: Audit.MissingColumn
+1/1 Test #31: Audit.MissingColumn ..............***Failed    3.33 sec
+{
+    "Case":  "MissingColumn",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  1,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 1 rows in 5.1002 ms\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 1\nAvg time: 5.1002 ms\nThroughput: 196 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for MissingColumn
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.36 sec
+
+The following tests FAILED:
+	 31 - Audit.MissingColumn (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 33: Audit.MissingInput
+1/1 Test #33: Audit.MissingInput ...............***Failed    3.39 sec
+{
+    "Case":  "MissingInput",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  0,
+    "InputUnchanged":  false,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 0 rows in 0.2484 ms [1 error rows]\n\n--- Summary ---\nFile: does-not-exist.csv\nRepeats: 1\nAvg rows: 0\nAvg time: 0.2484 ms\nThroughput: 0 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for MissingInput
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.41 sec
+
+The following tests FAILED:
+	 33 - Audit.MissingInput (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 32: Audit.NumericOverflow
+1/1 Test #32: Audit.NumericOverflow ............***Failed    3.36 sec
+{
+    "Case":  "NumericOverflow",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  2,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 2 rows in 4.3841 ms\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 2\nAvg time: 4.3841 ms\nThroughput: 456 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for NumericOverflow
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.41 sec
+
+The following tests FAILED:
+	 32 - Audit.NumericOverflow (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 34: Audit.ReportFailure
+1/1 Test #34: Audit.ReportFailure ..............***Failed    3.26 sec
+csvp_bench.exe : Cannot open report file: missing-parent/report.txt
+����λ�� D:\Documents\Documents\BaiduSyncdisk\C++��Ŀ\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pi
+peline\build\part_a_audit\probe.ps1:63 �ַ�: 24
++ ... ogramOutput = @(& $benchExe $inputFile 1 $reportFile 2> 'stderr.txt')
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Cannot open rep...rent/report.txt:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.28 sec
+
+The following tests FAILED:
+	 34 - Audit.ReportFailure (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 35: Audit.SameInputOutput
+1/1 Test #35: Audit.SameInputOutput ............***Failed    3.38 sec
+{
+    "Case":  "SameInputOutput",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  1,
+    "InputUnchanged":  false,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 1 rows in 5.4497 ms\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 1\nAvg time: 5.4497 ms\nThroughput: 183 rows/sec\n\nReport written to: input.csv",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for SameInputOutput
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.40 sec
+
+The following tests FAILED:
+	 35 - Audit.SameInputOutput (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 30: Audit.TrimField
+1/1 Test #30: Audit.TrimField ..................***Failed    3.38 sec
+{
+    "Case":  "TrimField",
+    "ExpectedBehaviorSatisfied":  false,
+    "ExitCode":  0,
+    "ImportedRows":  0,
+    "InputUnchanged":  true,
+    "Stdout":  "CSV Import Pipeline Benchmark\n=============================\n\n  Run 1: 0 rows in 3.5143 ms (1 skipped) [1 error rows]\n\n--- Summary ---\nFile: input.csv\nRepeats: 1\nAvg rows: 0\nAvg time: 3.5143 ms\nThroughput: 0 rows/sec\n\nReport written to: report.txt",
+    "Stderr":  {
+
+               }
+}
+FAIL: expected safe/correct behavior was not satisfied for TrimField
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.40 sec
+
+The following tests FAILED:
+	 30 - Audit.TrimField (Failed)
+   Site: local-baseline-audit
+   Build name: csvp-debug-baseline
+Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/build/vs2022-x64-release
+    Start 36: Audit.WindowsPath
+1/1 Test #36: Audit.WindowsPath ................***Failed    3.54 sec
+{
+    "Case":  "WindowsPath",
+    "DefaultCodePage":  936,
+    "FileExists":  true,
+    "FopenErrors":  {
+                        "936":  0,
+                        "65001":  2
+                    }
+}
+FAIL: UTF-8 pathname cannot be opened by narrow fopen_s on this machine.
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   3.56 sec
+
+The following tests FAILED:
+	 36 - Audit.WindowsPath (Failed), error output: Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
+Errors while running CTest
