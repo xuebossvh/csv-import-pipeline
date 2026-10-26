@@ -8,6 +8,7 @@
 #include <functional>
 #include <chrono>
 #include <atomic>
+#include <memory>
 
 namespace csvp {
 
@@ -18,8 +19,7 @@ namespace csvp {
 // - importSync:  同步导入，阻塞直到全部完成
 // - importStreaming: 流式导入，支持进度回调和提前终止（Part B）
 //
-// 注意：当前版本 importStreaming 和 shutdown 仅为骨架，
-// 需要候选人完成实现。
+// 每个实例同时最多执行一个导入；重叠调用会抛出 logic_error。
 class ImportPipeline {
 public:
     struct Config {
@@ -38,9 +38,13 @@ public:
         uint64_t error_count = 0;     // 全部错误行/致命错误数，不受详情上限影响
         bool errors_truncated = false;
         size_t error_bytes = 0;       // 保留对象及字符串内容；不含allocator额外开销
+        bool cancelled = false;     // 协作停止后的部分结果；success仍表示无致命错误
     };
 
-    ImportPipeline() = default;
+    ImportPipeline();
+    ~ImportPipeline();
+    ImportPipeline(const ImportPipeline&) = delete;
+    ImportPipeline& operator=(const ImportPipeline&) = delete;
 
     // 传入解析器配置和校验规则列表
     ImportPipeline(const Config& cfg, std::vector<FieldRule> rules);
@@ -48,11 +52,11 @@ public:
     // ---- 同步导入（当前实现）----
     Result importSync(const char* filepath);
 
-    // ---- 流式导入（Part B：候选人实现）----
+    // ---- 流式导入 ----
     // 和 importSync 做同一件事，但放到后台线程里做：调用后马上返回，
     // 不占住调用方的线程。
     //   1. 读文件、解析、校验都在后台线程上完成，当前线程不等
-    //   2. 每处理完 1000 行，调用一次 progress(已处理的行数) 回调
+    //   2. 每处理完1000条数据记录调用progress（含跳过，不含表头/空行）
     //   3. progress 返回 false 时，当作调用方要求停止，尽快收尾
     //   4. 最终结果（被叫停时就是已完成的那部分）通过返回的 std::future 交出
     //   5. 后台线程要经常看一眼停止标志，否则 shutdown() 喊停后
@@ -63,15 +67,25 @@ public:
     // 请求停止正在进行的流式导入，最多等 timeout 毫秒。
     //   1. 先置位停止标志，通知后台线程收尾
     //   2. 最多等 timeout 毫秒，到点就返回，不强行结束线程
-    //   3. 返回时把未完成的任务数写进 pending_count_
+    //   3. pendingCount()随任务注册/完成更新，超时不会把未完成任务清零
     //   4. 不能死锁、泄漏资源或崩溃
     //   5. 不要用"一把大锁锁住全部操作"的方式实现
     void shutdown(std::chrono::milliseconds timeout);
 
-    // ---- 同步导入结束或抛出异常后查询；Part A不承诺并发查询安全 ----
+    // shutdown关闭实例，不再接受新任务。任务数为已接受但尚未完成的导入数（0或1），
+    // 不是尚未读取的行数；超时返回后任务可能继续收尾，完成后该值降为0。
+    // pendingCount用于任务计数；需要结果时仍应等待返回的future。
+    size_t pendingCount() const;
+
+    // 并发安全的一致快照，每1000条数据记录以及结束/异常时发布。
     Stats stats() const;
 
 private:
+    struct SharedState;
+    std::shared_ptr<SharedState> state_;
+    void beginImport();
+    Result runImport(const char* filepath, const std::function<bool(size_t)>& progress,
+                     const std::shared_ptr<SharedState>& state);
     void validateAndCollect(const Row& row, uint64_t line_number,
                             const std::string& raw_line, Result& result);
     size_t detailBudget(const Result& result) const;
@@ -85,18 +99,7 @@ private:
     std::vector<FieldRule> rules_;
     FieldValidator validator_;
 
-    // ---- 热路径统计计数器 ----
-    // 供 importStreaming 的后台线程在每行处理时递增。
-    std::atomic<uint64_t> hot_total_lines_ = 0;
-    std::atomic<uint64_t> hot_rows_imported_ = 0;
-    std::atomic<uint64_t> hot_rows_skipped_ = 0;
-
-    // ---- 停止标志 ----
-    std::atomic<bool> stop_requested_ = false;
-    size_t pending_count_ = 0;  // shutdown 超时后的未完成任务数
-
-    Stats stats_;
-    bool streaming_active_ = false;
+    // 控制/发布状态由共享所有权管理，后台线程不捕获外部管道的this。
 };
 
 } // namespace csvp
