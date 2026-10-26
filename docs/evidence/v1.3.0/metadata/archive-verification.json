@@ -1,0 +1,18 @@
+{
+  "input": "D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/data/sample_1gb.csv",
+  "archive": "D:\\Documents\\Documents\\BaiduSyncdisk\\C++项目\\c++ Study\\KDevelop-Train\\LessonCode\\week01\\practice\\csv-import-pipeline\\docs\\evidence\\v1.3.0\\errors\\sample_1gb.jsonl",
+  "inputBytes": 1003898922,
+  "inputSHA256": "89fa6c306b9730ea71a782da699c64cec1efc6b4097852bb457bc30abc9477d0",
+  "archiveSHA256": "d7839cc46c6b5657e66632505464ceea867e250da423c807638e3cc6b9003b6c",
+  "dataRows": 10000000,
+  "importedRows": 9990000,
+  "errorRows": 10000,
+  "firstErrorLine": 1001,
+  "lastErrorLine": 10000001,
+  "maxPhysicalLineBytes": 101,
+  "finalNewline": true,
+  "allErrorLineNumbersReasonsAndRawBytesMatch": true,
+  "rowConservation": true,
+  "verifierSeconds": 26.60669470000267,
+  "note": "Independent verification time is not import benchmark time; memory proof comes from the importer process."
+}

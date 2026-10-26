@@ -3,3 +3,4 @@
 
 # Preserve captured diagnostic/benchmark output, including CRLF and trailing spaces.
 docs/evidence/**/*.txt -text -whitespace
+docs/evidence/**/*.jsonl -text

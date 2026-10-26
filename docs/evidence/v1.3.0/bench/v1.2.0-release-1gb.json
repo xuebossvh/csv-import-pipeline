@@ -1,0 +1,32 @@
+{
+  "Started": "2026-10-26T22:27:28.6419629+08:00",
+  "Configuration": "Release v1.2.0 x64 /O2 bounded preview only",
+  "SourceCommit": "4713fab",
+  "Binary": "build/v1.2.0-baseline/csvp_bench.exe",
+  "BinarySHA256": "DC88FB94E98BA212653C732259306F8B20636E78BB6012AF7D8713306DB67CD9",
+  "InputFile": "data/sample_1gb.csv",
+  "InputBytes": 1003898922,
+  "InputSHA256": "89FA6C306B9730EA71A782DA699C64CEC1EFC6B4097852BB457BC30ABC9477D0",
+  "Repeats": 1,
+  "ExitCode": 0,
+  "TimedOut": false,
+  "WallSeconds": 9.152483,
+  "CPUSeconds": 8.109375,
+  "PeakWorkingSetBytes": 6336512,
+  "PeakPrivateBytesSampled": 1290240,
+  "SampleMilliseconds": 100,
+  "Samples": 85,
+  "CachePolicy": "Input hash read immediately before launch; OS file cache was not flushed.",
+  "Runs": [
+    {
+      "Run": 1,
+      "RowsImported": 9990000,
+      "Milliseconds": 8838.61,
+      "RowsSkipped": 10000
+    }
+  ],
+  "Stdout": "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 9990000 rows in 8838.61 ms (10000 skipped) [10000 error rows, 200 retained]\r\n\r\n--- Summary ---\r\nFile: data/sample_1gb.csv\r\nRepeats: 1\r\nAvg time: 8838.61 ms\r\nThroughput: 1.13027e+06 rows/sec\r\nReport written to: docs/evidence/v1.3.0/bench/v1.2.0-release-1gb-report.txt\r\n",
+  "Stderr": "",
+  "ReportSummary": "CSV Import Pipeline Benchmark Report\r\nFile: data/sample_1gb.csv\r\nRepeats: 1\r\nAvg time: 8838.61 ms\r\nThroughput: 1.13027e+06 rows/sec\r\n\r\nrun rows_imported rows_skipped total_error_rows retained_errors detail_bytes details_truncated time_ms\r\n1 9990000 10000 10000 200 64692 yes 8838.61",
+  "ComparisonNote": "v1.2.0 retained only 200 previews; it did not provide the complete error archive required by Part C."
+}

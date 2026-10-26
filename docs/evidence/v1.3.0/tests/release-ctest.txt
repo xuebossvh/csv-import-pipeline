@@ -1,0 +1,1568 @@
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 112: Concurrent.ActiveImportRejectsSynchronousAndAsynchronousReentry
+[ctest] 1/1 Test #112: Concurrent.ActiveImportRejectsSynchronousAndAsynchronousReentry ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.CallbackC
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 119: Concurrent.CallbackCancellationDoesNotPermanentlyCloseTheInstance
+[ctest] 1/1 Test #119: Concurrent.CallbackCancellationDoesNotPermanentlyCloseTheInstance ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.CallbackE
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 109: Concurrent.CallbackExceptionReachesFutureAndReleasesTheActiveSlot
+[ctest] 1/1 Test #109: Concurrent.CallbackExceptionReachesFutureAndReleasesTheActiveSlot ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.CallbackR
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 113: Concurrent.CallbackReentryIsRejectedWithoutHoldingTheStateLock
+[ctest] 1/1 Test #113: Concurrent.CallbackReentryIsRejectedWithoutHoldingTheStateLock ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.CallbackS
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 114: Concurrent.CallbackShutdownDoesNotWaitForItsOwnTask
+[ctest] 1/1 Test #114: Concurrent.CallbackShutdownDoesNotWaitForItsOwnTask ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.Co
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 118: Concurrent.CompletedInstanceCanRunAnotherImportWithFreshStatistics
+[ctest] 1/1 Test #118: Concurrent.CompletedInstanceCanRunAnotherImportWithFreshStatistics ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.DestroyingTheI
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 116: Concurrent.DestroyingTheInstanceDoesNotBlockAndTheFutureStaysValid
+[ctest] 1/1 Test #116: Concurrent.DestroyingTheInstanceDoesNotBlockAndTheFutureStaysValid ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.DestroyingTheR
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 117: Concurrent.DestroyingTheReturnedFutureDoesNotJoinTheWorker
+[ctest] 1/1 Test #117: Concurrent.DestroyingTheReturnedFutureDoesNotJoinTheWorker ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.EmptyI
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 120: Concurrent.EmptyInputWithoutHeaderCompletesWithoutProgress
+[ctest] 1/1 Test #120: Concurrent.EmptyInputWithoutHeaderCompletesWithoutProgress ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.EmptyP
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 107: Concurrent.EmptyProgressCallbackStillImportsEveryRow
+[ctest] 1/1 Test #107: Concurrent.EmptyProgressCallbackStillImportsEveryRow ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.Im
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 101: Concurrent.ImportAndStats
+[ctest] 1/1 Test #101: Concurrent.ImportAndStats ........   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.In
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 108: Concurrent.InputPathAndConstructorArgumentsDoNotRemainBorrowed
+[ctest] 1/1 Test #108: Concurrent.InputPathAndConstructorArgumentsDoNotRemainBorrowed ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.M
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 111: Concurrent.MissingInputProducesAFailedResultAndNoProgress
+[ctest] 1/1 Test #111: Concurrent.MissingInputProducesAFailedResultAndNoProgress ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.ProgressC
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 106: Concurrent.ProgressCountsBadRowsButExcludesHeaderAndBlankLines
+[ctest] 1/1 Test #106: Concurrent.ProgressCountsBadRowsButExcludesHeaderAndBlankLines ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.ProgressR
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 105: Concurrent.ProgressReturningFalseCancelsAtThePublishedBoundary
+[ctest] 1/1 Test #105: Concurrent.ProgressReturningFalseCancelsAtThePublishedBoundary ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.ShutdownN
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 104: Concurrent.ShutdownNoDeadlock
+[ctest] 1/1 Test #104: Concurrent.ShutdownNoDeadlock ....   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.ShutdownT
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 115: Concurrent.ShutdownTimeoutReportsPendingUntilTheWorkerActuallyFinishes
+[ctest] 1/1 Test #115: Concurrent.ShutdownTimeoutReportsPendingUntilTheWorkerActuallyFinishes ...   Passed    0.10 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.14 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.StatsA
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 103: Concurrent.StatsAtomicRead
+[ctest] 1/1 Test #103: Concurrent.StatsAtomicRead .......   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.StatsT
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 102: Concurrent.StatsThreadSafety
+[ctest] 1/1 Test #102: Concurrent.StatsThreadSafety .....   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Concurrent\.Str
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 110: Concurrent.StrictValidationFailureIsDeliveredThroughTheFuture
+[ctest] 1/1 Test #110: Concurrent.StrictValidationFailureIsDeliveredThroughTheFuture ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^ErrorLogWriter\.C
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 100: ErrorLogWriter.CloseFailureAfterRealFcloseDoesNotCauseADoubleClose
+[ctest] 1/1 Test #100: ErrorLogWriter.CloseFailureAfterRealFcloseDoesNotCauseADoubleClose ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^ErrorLogWriter\.F
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 99: ErrorLogWriter.FlushFailureThrowsAndRepeatedCloseDoesNotReleaseTheStreamAgain
+[ctest] 1/1 Test #99: ErrorLogWriter.FlushFailureThrowsAndRepeatedCloseDoesNotReleaseTheStreamAgain ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^ErrorLogWriter\.S
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 98: ErrorLogWriter.ShortWriteDoesNotCountThePartialRecordAndFailureRemainsSticky
+[ctest] 1/1 Test #98: ErrorLogWriter.ShortWriteDoesNotCountThePartialRecordAndFailureRemainsSticky ...   Passed    0.10 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.14 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^d
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] No tests were found!!!
+[ctest] CTest 已完成，返回代码 0
+[ctest] 测试 'd:/documents/documents/baidusyncdisk/c++项目/c++ study/kdevelop-train' 未运行，也没有输出。测试可执行文件可能尚未生成 - 请先生成测试目标，然后再次运行测试。
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.ChineseG
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 5: Parser.ChineseGBKEncoding
+[ctest] 1/1 Test #5: Parser.ChineseGBKEncoding ........   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.ChineseU
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 10: Parser.ChineseUtf8AbsolutePathAndContent
+[ctest] 1/1 Test #10: Parser.ChineseUtf8AbsolutePathAndContent ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.CR
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 9: Parser.CRLFLFMixedCR
+[ctest] 1/1 Test #9: Parser.CRLFLFMixedCR .............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Cr
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 29: Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField
+[ctest] 1/1 Test #29: Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.D
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 14: Parser.DisablingTrimPreservesOrdinarySpaces
+[ctest] 1/1 Test #14: Parser.DisablingTrimPreservesOrdinarySpaces ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Emb
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 17: Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows
+[ctest] 1/1 Test #17: Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Emp
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 6: Parser.EmptyFile
+[ctest] 1/1 Test #6: Parser.EmptyFile .................   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Ex
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 28: Parser.Exact65536ByteFinalRecordWithoutNewline
+[ctest] 1/1 Test #28: Parser.Exact65536ByteFinalRecordWithoutNewline ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.G
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 30: Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte
+[ctest] 1/1 Test #30: Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.HeaderA
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 25: Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable
+[ctest] 1/1 Test #25: Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable ...   Passed    0.10 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.13 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.HeaderM
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 2: Parser.HeaderMapping
+[ctest] 1/1 Test #2: Parser.HeaderMapping .............   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.InvalidG
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 19: Parser.InvalidGbkDoesNotConsumeARealComma
+[ctest] 1/1 Test #19: Parser.InvalidGbkDoesNotConsumeARealComma ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.InvalidU
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 20: Parser.InvalidUtf8ReportsEncodingErrorAndRecovers
+[ctest] 1/1 Test #20: Parser.InvalidUtf8ReportsEncodingErrorAndRecovers ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.La
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 12: Parser.LastQuotedFieldAndTrailingEmptyField
+[ctest] 1/1 Test #12: Parser.LastQuotedFieldAndTrailingEmptyField ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Le
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 18: Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter
+[ctest] 1/1 Test #18: Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Man
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 21: Parser.ManyBlankLinesAreSkippedWithoutRecursion
+[ctest] 1/1 Test #21: Parser.ManyBlankLinesAreSkippedWithoutRecursion ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Max
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 16: Parser.MaximumLineBoundaryAndOverlongLineRecovery
+[ctest] 1/1 Test #16: Parser.MaximumLineBoundaryAndOverlongLineRecovery ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Misp
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 26: Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives
+[ctest] 1/1 Test #26: Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Miss
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 7: Parser.MissingFile
+[ctest] 1/1 Test #7: Parser.MissingFile ...............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.N
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 3: Parser.NoTrailingNewline
+[ctest] 1/1 Test #3: Parser.NoTrailingNewline .........   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Q
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 8: Parser.QuotedEscapedQuote
+[ctest] 1/1 Test #8: Parser.QuotedEscapedQuote ........   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.13 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Rea
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 15: Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue
+[ctest] 1/1 Test #15: Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Ree
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 4: Parser.ReentryState
+[ctest] 1/1 Test #4: Parser.ReentryState ..............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Reo
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 11: Parser.ReopenAfterFailureClearsOldErrorAndHeader
+[ctest] 1/1 Test #11: Parser.ReopenAfterFailureClearsOldErrorAndHeader ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Rep
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 23: Parser.RepeatedOpenReadCyclesKeepIndependentResults
+[ctest] 1/1 Test #23: Parser.RepeatedOpenReadCyclesKeepIndependentResults ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Res
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 22: Parser.ResourceOwnershipAndCountersHaveSafeTypes
+[ctest] 1/1 Test #22: Parser.ResourceOwnershipAndCountersHaveSafeTypes ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Tri
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 13: Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces
+[ctest] 1/1 Test #13: Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces ...   Passed    0.12 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.16 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Tru
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 27: Parser.TruncatedUtf8AndSurrogateEncodingAreRejected
+[ctest] 1/1 Test #27: Parser.TruncatedUtf8AndSurrogateEncodingAreRejected ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.UT
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 1: Parser.UTF8Basic
+[ctest] 1/1 Test #1: Parser.UTF8Basic .................   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Parser\.Ut
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 24: Parser.Utf8BomIsExcludedFromTheFirstHeaderField
+[ctest] 1/1 Test #24: Parser.Utf8BomIsExcludedFromTheFirstHeaderField ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.B
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 61: Pipeline.ByteBudgetDoesNotLoseAggregateCounts
+[ctest] 1/1 Test #61: Pipeline.ByteBudgetDoesNotLoseAggregateCounts ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.C
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 65: Pipeline.ColumnMismatchSkipsAndContinues
+[ctest] 1/1 Test #65: Pipeline.ColumnMismatchSkipsAndContinues ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.D
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 59: Pipeline.DefaultErrorLimitBoundsStoredDetails
+[ctest] 1/1 Test #59: Pipeline.DefaultErrorLimitBoundsStoredDetails ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveCal
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 89: Pipeline.ErrorArchiveCallbackExceptionFlushesObservedErrorsBeforeFutureRethrows
+[ctest] 1/1 Test #89: Pipeline.ErrorArchiveCallbackExceptionFlushesObservedErrorsBeforeFutureRethrows ...   Passed    0.11 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.16 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveCan
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 88: Pipeline.ErrorArchiveCancellationClosesAndFlushesExactlyTheProcessedPart
+[ctest] 1/1 Test #88: Pipeline.ErrorArchiveCancellationClosesAndFlushesExactlyTheProcessedPart ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.12 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveCo
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 79: Pipeline.ErrorArchiveContainsAllThousandErrorsBeyondMemoryCountCap
+[ctest] 1/1 Test #79: Pipeline.ErrorArchiveContainsAllThousandErrorsBeyondMemoryCountCap ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.12 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveCr
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 94: Pipeline.ErrorArchiveCreationFailureIsDeliveredThroughTheFuture
+[ctest] 1/1 Test #94: Pipeline.ErrorArchiveCreationFailureIsDeliveredThroughTheFuture ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveD
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 77: Pipeline.ErrorArchiveDisabledPreservesBoundedInMemoryBehavior
+[ctest] 1/1 Test #77: Pipeline.ErrorArchiveDisabledPreservesBoundedInMemoryBehavior ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.12 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveEn
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 82: Pipeline.ErrorArchiveEncodesGbkBytesAsReversibleLatin1Escapes
+[ctest] 1/1 Test #82: Pipeline.ErrorArchiveEncodesGbkBytesAsReversibleLatin1Escapes ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveEs
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 81: Pipeline.ErrorArchiveEscapesCsvQuotesCommasCarriageReturnsAndBackslashesLosslessly
+[ctest] 1/1 Test #81: Pipeline.ErrorArchiveEscapesCsvQuotesCommasCarriageReturnsAndBackslashesLosslessly ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveK
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 80: Pipeline.ErrorArchiveKeepsEveryCauseWhenTheMemoryByteBudgetIsExhausted
+[ctest] 1/1 Test #80: Pipeline.ErrorArchiveKeepsEveryCauseWhenTheMemoryByteBudgetIsExhausted ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.13 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveMissingInputA
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 97: Pipeline.ErrorArchiveMissingInputAlternateStreamOrDeviceIsRejected
+[ctest] 1/1 Test #97: Pipeline.ErrorArchiveMissingInputAlternateStreamOrDeviceIsRejected ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveMissingInputC
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 95: Pipeline.ErrorArchiveMissingInputCaseAliasDoesNotCreateEitherPath
+[ctest] 1/1 Test #95: Pipeline.ErrorArchiveMissingInputCaseAliasDoesNotCreateEitherPath ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveMissingInputT
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 96: Pipeline.ErrorArchiveMissingInputTrailingDotOrSpaceAliasesAreNeverCreated
+[ctest] 1/1 Test #96: Pipeline.ErrorArchiveMissingInputTrailingDotOrSpaceAliasesAreNeverCreated ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveNe
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 84: Pipeline.ErrorArchiveNeverOverwritesAnExistingFile
+[ctest] 1/1 Test #84: Pipeline.ErrorArchiveNeverOverwritesAnExistingFile ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveNu
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 91: Pipeline.ErrorArchiveNullEmptyAndMissingInputsRemainFailedResults
+[ctest] 1/1 Test #91: Pipeline.ErrorArchiveNullEmptyAndMissingInputsRemainFailedResults ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveP
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 83: Pipeline.ErrorArchivePreservesInvalidUtf8BytesWithoutTranscoding
+[ctest] 1/1 Test #83: Pipeline.ErrorArchivePreservesInvalidUtf8BytesWithoutTranscoding ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveRejectsA
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 86: Pipeline.ErrorArchiveRejectsAMissingParentDirectory
+[ctest] 1/1 Test #86: Pipeline.ErrorArchiveRejectsAMissingParentDirectory ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.15 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveRejectsD
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 87: Pipeline.ErrorArchiveRejectsDirectoryAsOutput
+[ctest] 1/1 Test #87: Pipeline.ErrorArchiveRejectsDirectoryAsOutput ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveRejectsTh
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 85: Pipeline.ErrorArchiveRejectsTheInputAndItsLexicalAliasWithoutChangingIt
+[ctest] 1/1 Test #85: Pipeline.ErrorArchiveRejectsTheInputAndItsLexicalAliasWithoutChangingIt ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveRejectsTruncatedD
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 92: Pipeline.ErrorArchiveRejectsTruncatedDataInsteadOfClaimingCompleteness
+[ctest] 1/1 Test #92: Pipeline.ErrorArchiveRejectsTruncatedDataInsteadOfClaimingCompleteness ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveRejectsTruncatedH
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 93: Pipeline.ErrorArchiveRejectsTruncatedHeaderInsteadOfClaimingCompleteness
+[ctest] 1/1 Test #93: Pipeline.ErrorArchiveRejectsTruncatedHeaderInsteadOfClaimingCompleteness ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveS
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 90: Pipeline.ErrorArchiveStrictFailureFlushesTheObservedErrorBeforeThrowing
+[ctest] 1/1 Test #90: Pipeline.ErrorArchiveStrictFailureFlushesTheObservedErrorBeforeThrowing ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorArchiveW
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 78: Pipeline.ErrorArchiveWithoutErrorsIsCreatedAndCompletedEmpty
+[ctest] 1/1 Test #78: Pipeline.ErrorArchiveWithoutErrorsIsCreatedAndCompletedEmpty ...   Passed    0.08 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorC
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 72: Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull
+[ctest] 1/1 Test #72: Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull ...   Passed    0.10 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.13 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ErrorL
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 58: Pipeline.ErrorLimit
+[ctest] 1/1 Test #58: Pipeline.ErrorLimit ..............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Ex
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 60: Pipeline.ExplicitUnlimitedErrorCollection
+[ctest] 1/1 Test #60: Pipeline.ExplicitUnlimitedErrorCollection ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.F
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 69: Pipeline.FailedReopenDoesNotRetainPreviousStatistics
+[ctest] 1/1 Test #69: Pipeline.FailedReopenDoesNotRetainPreviousStatistics ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.L
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 62: Pipeline.LongErrorDetailsRespectByteBudget
+[ctest] 1/1 Test #62: Pipeline.LongErrorDetailsRespectByteBudget ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.MissingF
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 56: Pipeline.MissingFile
+[ctest] 1/1 Test #56: Pipeline.MissingFile .............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.MissingR
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 64: Pipeline.MissingRequiredSchemaColumnsAreNotAccepted
+[ctest] 1/1 Test #64: Pipeline.MissingRequiredSchemaColumnsAreNotAccepted ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.N
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 63: Pipeline.NoHeaderUsesRuleCount
+[ctest] 1/1 Test #63: Pipeline.NoHeaderUsesRuleCount ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.O
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 71: Pipeline.OverlongLineIsReportedAndNextLineStillImports
+[ctest] 1/1 Test #71: Pipeline.OverlongLineIsReportedAndNextLineStillImports ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.ParseE
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 66: Pipeline.ParseErrorSkipsAndContinues
+[ctest] 1/1 Test #66: Pipeline.ParseErrorSkipsAndContinues ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Parser
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 73: Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics
+[ctest] 1/1 Test #73: Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.R
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 68: Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace
+[ctest] 1/1 Test #68: Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Sh
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 76: Pipeline.ShutdownOfIdleInstanceIsIdempotentAndRejectsNewImports
+[ctest] 1/1 Test #76: Pipeline.ShutdownOfIdleInstanceIsIdempotentAndRejectsNewImports ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Sk
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 57: Pipeline.SkipBadRows
+[ctest] 1/1 Test #57: Pipeline.SkipBadRows .............   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Sta
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 70: Pipeline.StatisticsExcludeHeaderAndBlankLines
+[ctest] 1/1 Test #70: Pipeline.StatisticsExcludeHeaderAndBlankLines ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Stre
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 75: Pipeline.StreamingImportMatchesSynchronousResultWithoutSpuriousProgress
+[ctest] 1/1 Test #75: Pipeline.StreamingImportMatchesSynchronousResultWithoutSpuriousProgress ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.13 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Stri
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 67: Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors
+[ctest] 1/1 Test #67: Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.Sy
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 55: Pipeline.SyncSmallClean
+[ctest] 1/1 Test #55: Pipeline.SyncSmallClean ..........   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Pipeline\.T
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 74: Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata
+[ctest] 1/1 Test #74: Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.B
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 52: Row.BooleanConversionDistinguishesFalseFromInvalid
+[ctest] 1/1 Test #52: Row.BooleanConversionDistinguishesFalseFromInvalid ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.E
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 54: Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber
+[ctest] 1/1 Test #54: Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.Int
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 49: Row.IntegerBoundsRemainRepresentable
+[ctest] 1/1 Test #49: Row.IntegerBoundsRemainRepresentable ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.InvalidD
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 50: Row.InvalidDoubleIsNotSilentlyConvertedToZero
+[ctest] 1/1 Test #50: Row.InvalidDoubleIsNotSilentlyConvertedToZero ...   Passed    0.10 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.15 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.InvalidI
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 48: Row.InvalidIntegerIsNotSilentlyConvertedToZero
+[ctest] 1/1 Test #48: Row.InvalidIntegerIsNotSilentlyConvertedToZero ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.N
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 51: Row.NonFiniteDoubleIsRejected
+[ctest] 1/1 Test #51: Row.NonFiniteDoubleIsRejected ....   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Row\.O
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 53: Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues
+[ctest] 1/1 Test #53: Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.B
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 47: Validator.BooleanValuesAndInvalidBoolean
+[ctest] 1/1 Test #47: Validator.BooleanValuesAndInvalidBoolean ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.D
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 41: Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected
+[ctest] 1/1 Test #41: Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.F
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 43: Validator.FractionalIntegerRangeBoundsAreNotTruncated
+[ctest] 1/1 Test #43: Validator.FractionalIntegerRangeBoundsAreNotTruncated ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.11 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.IntegerO
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 40: Validator.IntegerOverflowAndNumericSuffixesAreRejected
+[ctest] 1/1 Test #40: Validator.IntegerOverflowAndNumericSuffixesAreRejected ...   Passed    0.09 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.12 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.IntegerR
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 45: Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong
+[ctest] 1/1 Test #45: Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.InvalidRa
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 44: Validator.InvalidRangeRulesAreReported
+[ctest] 1/1 Test #44: Validator.InvalidRangeRulesAreReported ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.InvalidRe
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 46: Validator.InvalidRegexIsReportedWithoutThrowing
+[ctest] 1/1 Test #46: Validator.InvalidRegexIsReportedWithoutThrowing ...   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.MissingO
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 39: Validator.MissingOptionalColumnDoesNotRequireAValue
+[ctest] 1/1 Test #39: Validator.MissingOptionalColumnDoesNotRequireAValue ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.MissingW
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 38: Validator.MissingWholeRequiredColumnsProduceErrors
+[ctest] 1/1 Test #38: Validator.MissingWholeRequiredColumnsProduceErrors ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.Mu
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 37: Validator.MultipleRules
+[ctest] 1/1 Test #37: Validator.MultipleRules ..........   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.N
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]     Start 42: Validator.NanCannotBypassRange
+[ctest] 1/1 Test #42: Validator.NanCannotBypassRange ...   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.Ra
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 35: Validator.RangeCheck
+[ctest] 1/1 Test #35: Validator.RangeCheck .............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.09 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.Reg
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 36: Validator.RegexCheck
+[ctest] 1/1 Test #36: Validator.RegexCheck .............   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.Req
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 34: Validator.RequiredField
+[ctest] 1/1 Test #34: Validator.RequiredField ..........   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.TypeCheckD
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 33: Validator.TypeCheckDouble
+[ctest] 1/1 Test #33: Validator.TypeCheckDouble ........   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.TypeCheckI
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 32: Validator.TypeCheckInt
+[ctest] 1/1 Test #32: Validator.TypeCheckInt ...........   Passed    0.06 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Release --output-on-failure -R ^Validator\.TypeCheckS
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest]    Site: 
+[ctest]    Build name: (empty)
+[ctest] Cannot find file: D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation/DartConfiguration.tcl
+[ctest] Test project D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation
+[ctest]     Start 31: Validator.TypeCheckString
+[ctest] 1/1 Test #31: Validator.TypeCheckString ........   Passed    0.07 sec
+[ctest] 
+[ctest] 100% tests passed, 0 tests failed out of 1
+[ctest] 
+[ctest] Total Test time (real) =   0.10 sec
+[ctest] CTest 已完成，返回代码 0

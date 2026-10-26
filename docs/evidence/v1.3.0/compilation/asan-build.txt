@@ -1,0 +1,25 @@
+[build] 正在启动生成
+[proc] 正在执行命令: D:/Documents/文档/CMake/bin/cmake.exe --build "D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/asan" --config RelWithDebInfo --
+[build] 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+[build] 
+[build]   1>Checking Build System
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   pipeline.cpp
+[build]   error_log.cpp
+[build]   Generating Code...
+[build]   csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\RelWithDebInfo\csvp.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   bench_import.cpp
+[build]   csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\RelWithDebInfo\csvp_bench.exe
+[build]   gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\lib\RelWithDebInfo\gtest.lib
+[build]   gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\lib\RelWithDebInfo\gtest_main.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   test_concurrent.cpp
+[build]   test_pipeline.cpp
+[build]   Generating Code...
+[build]   csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\RelWithDebInfo\csvp_tests.exe
+[build]   gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\lib\RelWithDebInfo\gmock.lib
+[build]   gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\asan\lib\RelWithDebInfo\gmock_main.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[driver] 生成完毕: 00:00:25.891
+[build] 生成已完成，退出代码为 0

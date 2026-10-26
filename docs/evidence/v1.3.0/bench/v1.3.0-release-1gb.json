@@ -1,0 +1,46 @@
+{
+  "Started": "2026-10-26T22:28:29.0727198+08:00",
+  "Configuration": "Release v1.3.0 x64 /O2 full error archive",
+  "SourceCommit": "b0d830d",
+  "Binary": "build/validation/Release/csvp_bench.exe",
+  "BinarySHA256": "23DD4991061B919AEB89703F978B1E19C23E20422835E86A26D25209A6CE627B",
+  "InputFile": "data/sample_1gb.csv",
+  "InputBytes": 1003898922,
+  "InputSHA256": "89FA6C306B9730EA71A782DA699C64CEC1EFC6B4097852BB457BC30ABC9477D0",
+  "Repeats": 1,
+  "ExitCode": 0,
+  "TimedOut": false,
+  "WallSeconds": 9.1490581,
+  "CPUSeconds": 8.234375,
+  "PeakWorkingSetBytes": 5517312,
+  "PeakPrivateBytesSampled": 1228800,
+  "SampleMilliseconds": 100,
+  "Samples": 85,
+  "CachePolicy": "Input hash read immediately before launch; OS file cache was not flushed.",
+  "Runs": [
+    {
+      "Run": 1,
+      "RowsImported": 9990000,
+      "Milliseconds": 8909.02,
+      "RowsSkipped": 10000
+    }
+  ],
+  "Stdout": "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 9990000 rows in 8909.02 ms (10000 skipped) [10000 error rows, 200 retained, 10000 archived]\r\n\r\n--- Summary ---\r\nFile: data/sample_1gb.csv\r\nRepeats: 1\r\nAvg time: 8909.02 ms\r\nThroughput: 1.12133e+06 rows/sec\r\nReport written to: docs/evidence/v1.3.0/bench/v1.3.0-release-1gb-report.txt\r\nMemory API: GetProcessMemoryInfo\r\nPeakWorkingSetBytes: 5574656\r\nPeakPrivateCommitBytes: 1228800\r\nMemoryLimitBytes: 50000000\r\n",
+  "Stderr": "",
+  "ReportSummary": "CSV Import Pipeline Benchmark Report\r\nFile: data/sample_1gb.csv\r\nRepeats: 1\r\nAvg time: 8909.02 ms\r\nThroughput: 1.12133e+06 rows/sec\r\n\r\nrun rows_imported rows_skipped total_error_rows retained_errors detail_bytes details_truncated time_ms archived_errors error_log\r\n1 9990000 10000 10000 200 64692 yes 8909.02 10000 docs/evidence/v1.3.0/bench\\v1.3.0-release-1gb-report.errors.jsonl",
+  "ProcessMemoryInfo": {
+    "api": "GetProcessMemoryInfo",
+    "PeakWorkingSetBytes": 5574656,
+    "PeakPrivateCommitBytes": 1228800,
+    "LimitBytes": 50000000,
+    "WithinLimit": true
+  },
+  "ErrorArchive": {
+    "path": "docs/evidence/v1.3.0/errors/sample_1gb.jsonl",
+    "originalOutputPath": "docs/evidence/v1.3.0/bench/v1.3.0-release-1gb-report.errors.jsonl",
+    "packagingNote": "Moved after the measured run without changing bytes; use path above to reopen.",
+    "rows": 10000,
+    "sha256": "d7839cc46c6b5657e66632505464ceea867e250da423c807638e3cc6b9003b6c",
+    "verification": "docs/evidence/v1.3.0/metadata/archive-verification.json"
+  }
+}

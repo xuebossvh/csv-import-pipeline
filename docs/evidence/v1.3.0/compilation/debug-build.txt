@@ -1,0 +1,19 @@
+[build] 正在启动生成
+[proc] 正在执行命令: D:/Documents/文档/CMake/bin/cmake.exe --build "D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation" --config Debug --
+[build] 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+[build] 
+[build]   error_log.cpp
+[build]   pipeline.cpp
+[build]   Generating Code...
+[build]   csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp.lib
+[build]   bench_import.cpp
+[build]   csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp_bench.exe
+[build]   gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gtest.lib
+[build]   gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gtest_main.lib
+[build]   test_pipeline.cpp
+[build]   csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp_tests.exe
+[build]   gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gmock.lib
+[build]   gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gmock_main.lib
+[driver] 生成完毕: 00:00:15.993
+[build] 生成已完成，退出代码为 0
+[proc] 正在执行命令: D:\Documents\文档\CMake\bin\ctest.exe -T test --output-on-failure --build-config Debug --output-on-failure -R ^Concurrent\.A
