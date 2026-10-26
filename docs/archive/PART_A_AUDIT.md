@@ -1,6 +1,6 @@
 # CSV 项目 Part A 基线缺陷审查
 
-这是初始版本的历史审查；v1.1 的实际修复和验收结果见 [版本报告](REPORT_v1.1.md)。
+这是初始版本的历史审查；v1.1 的实际修复和验收结果见 [版本报告](../REPORT_v1.1.md)。
 
 日期：2026-10-26。源码基线：`74ddb98`，分支 `main`。
 
@@ -9,7 +9,7 @@
 ## Git 基线与范围
 
 - 在本 CSV 子目录建立了本地仓库，初始提交包含源码、现有测试、配置、文档及小样本，共 30 个文件；提交前按 Git blob 算法核验暂存内容与工作区字节一致。
-- 新增的 [.gitattributes](../.gitattributes) 仅用于禁止 Git 转换 CSV 样本换行符；仓库本地关闭自动换行转换。
+- 新增的 [.gitattributes](../../.gitattributes) 仅用于禁止 Git 转换 CSV 样本换行符；仓库本地关闭自动换行转换。
 - 既有忽略规则仍生效：构建产物、聊天记录和 `third_party/` 不属于此提交。随附 GoogleTest 自身仓库的版本为 `f8d7d77`，本地仍在原处。
 - 本地排除约 1 GB 性能数据及生成报告，没有删除它们。10 万行样本已纳入初始提交。
 - 初始源码与报告已分别提交为 `74ddb98` 和 `89f422e` 并推送。随后按仓库发布范围取消跟踪本地测试、样本及机器专用文件；本报告记录的行为仍对应初始基线，相关样本链接指向该历史版本。
@@ -24,7 +24,7 @@
 - 额外用 13 项隔离小样本/平台检查验证：**1 项正常输入对照通过，12 项预期正确行为断言失败**，下表给出具体观察。没有改原始源码或数据，也未运行大规模 OOM 测试。
 - 本轮没有构建或运行 Release、没有启用 ASan；不声称满足“Debug/Release 一致、ASan 零报告”。这些是后续修复后的验收项。
 
-原始记录：[默认用例输出](evidence/part-a-debug-default.txt)、[定向复现输出](evidence/part-a-debug-probes.txt)、[补测输出](evidence/part-a-debug-followup.txt)、[最终观察与样本字节证据](evidence/part-a-observations.json)。LastQuoted 和 ReportFailure 首次采集受 PowerShell stderr 行为影响，以补测及最终观察为准。
+原始记录：[默认用例输出](../evidence/baseline/part-a-debug-default.txt)、[定向复现输出](../evidence/baseline/part-a-debug-probes.txt)、[补测输出](../evidence/baseline/part-a-debug-followup.txt)、[最终观察与样本字节证据](../evidence/baseline/part-a-observations.json)。LastQuoted 和 ReportFailure 首次采集受 PowerShell stderr 行为影响，以补测及最终观察为准。
 
 | 定向验证 | 实际观察 |
 |---|---|

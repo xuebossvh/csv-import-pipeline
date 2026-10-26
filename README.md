@@ -1,13 +1,15 @@
-# CSV Import Pipeline v1.1
+# CSV Import Pipeline
 
-C++17 CSV 解析与校验库。v1.1 完成 Part A 的同步路径修复，详见 [版本报告](docs/REPORT_v1.1.md)。[原始审查](docs/PART_A_AUDIT.md) 保留为历史基线，不是当前待修列表。
+C++17 CSV 解析与校验库。v1.1 完成 Part A 的同步路径修复，详见 [版本报告](docs/REPORT_v1.1.md)。[原始审查](docs/archive/PART_A_AUDIT.md) 保留为历史基线，不是当前待修列表。
+
+报告与结果统一从 [文档索引](docs/README.md) 进入。当前待发布版本为 **v1.2.0**（Part B）；编译测试尚未完成，不代表已经发布。
 
 ## 发布范围
 
 仓库保留核心库、压测程序、CMake 配置、报告和小型证据。
 按用户指定范围，data、tests、third_party、Cursor 配置、AGENTS.md、.agents 目录及旧机器脚本仅留在本地，不跟踪。工作区 skill 与采集脚本仍可在本机使用。新克隆默认构建库与压测程序，测试需要本地准备完整测试源码、样本和 Google Test 1.14。
 
-成功行数表示解析和校验通过，不代表写入数据库。importStreaming、shutdown 仍为 Part B 骨架，v1.1 不实现后台导入或优雅停止。
+成功行数表示解析和校验通过，不代表写入数据库。已发布的 v1.1 只涵盖 Part A；当前工作区正在实现 Part B，设计与验证状态见 [Part B 报告](docs/REPORT_v1.2.0.md)，不将旧版验收输出作为新实现的验证结果。
 
 ## 结构
 
@@ -16,7 +18,7 @@ C++17 CSV 解析与校验库。v1.1 完成 Part A 的同步路径修复，详见
 | [include/csvp](include/csvp) | 公共配置、严格类型访问器、错误与统计接口 |
 | [src/parser.cpp](src/parser.cpp) | 64 KiB 顺序缓冲、行边界、编码字节检查、引号状态机 |
 | [src/validator.cpp](src/validator.cpp) | 必填、类型、范围与正则校验 |
-| [src/pipeline.cpp](src/pipeline.cpp) | 坏行策略、有界错误详情及同步统计 |
+| [src/pipeline.cpp](src/pipeline.cpp) | 同步/后台导入、协作停止、有界错误详情及统计快照 |
 | [bench/bench_import.cpp](bench/bench_import.cpp) | 压测、报告与输入输出路径检查 |
 | [CMakePresets.json](CMakePresets.json) | 本机普通构建和验证预设 |
 | [docs](docs) | 报告模板、版本报告、测试与性能证据 |
@@ -55,6 +57,19 @@ Debug 程序在 build/Debug，Release 程序在 build/Release。
 - stats() 在同步导入返回或抛异常后查询；本版本不承诺与 importSync 并发读写同一个对象。
 
 ## 本地验证
+
+### 当前工作区 Part B 接口
+
+- `importStreaming(path, progress)` 复制路径并在后台读取、解析和校验；返回 promise 支持的 future，丢弃 future 不会隐式等待线程。
+- 每处理1000条数据记录调用回调，好行/跳过的坏行都计入，表头/空行不计入；不足1000条的尾批不额外回调，允许空回调。
+- 回调返回 false 时返回已处理部分并置 `Result.cancelled=true`；`success` 仍表示没有致命输入错误。回调及严格模式异常由 `future.get()` 重新抛出。
+- `shutdown(timeout)` 关闭实例并请求停止，以同一个截止时间限制锁等待和任务等待；零/负超时直接返回。之后不再接受新导入。
+- `pendingCount()` 返回已接受但未完成的导入任务数（0或1），不是剩余行数。超时后仍为1，任务完成后降为0。回调内部调用shutdown不会等待自己。
+- 单个实例最多一个活跃导入；同步/异步重入抛出logic_error。正常完成或回调取消后可以再导入，显式shutdown后须使用新实例。
+- `stats()` 可并发读取一致快照，每1000条记录及结束/异常时发布。行解析、校验和回调不持有状态锁。
+- 析构请求取消但不等待，后台拥有独立引擎及共享状态；不能强杀阻塞I/O或用户回调。调用方负责让回调所捕获的对象活到任务结束，需等待结果时使用future。
+
+上述为当前实现契约，Debug、Release及ASan验收尚待完成。
 
 BUILD_TESTS 默认 OFF，BUILD_BENCH 默认 ON，ENABLE_ASAN 默认 OFF；已有缓存的显式值不被默认值覆盖。
 

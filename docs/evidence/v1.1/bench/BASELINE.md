@@ -2,7 +2,7 @@
 
 修复前实现对应 `0a5c52b`（其业务源码仍与初始版本一致）。旧 Debug 可执行文件在修改前复制到忽略的构建目录，后续构建不会覆盖该副本。
 
-- 缺陷定位和修复前定向测试见 [Part A 审查](../../PART_A_AUDIT.md) 及其证据附件。
+- 缺陷定位和修复前定向测试见 [Part A 审查](../../../archive/PART_A_AUDIT.md) 及其证据附件。
 - 本轮对同一个 `sample_100k.csv` 用旧 Debug 程序重复导入三次，保存 [原始输出](before-debug-100k-stdout.txt)、[报告](before-debug-100k-report.txt) 和 [采样数据](before-debug-100k.json)。
 - JSON 记录二进制与输入 SHA256、实际参数、退出码、各轮耗时、进程工作集峰值和采样私有内存峰值。
 - 比较前先读取输入 SHA256，未清空操作系统缓存。前后均使用相同数据、配置和三次重复；不把 Release 对 Debug 的差异冒称为算法改进。
