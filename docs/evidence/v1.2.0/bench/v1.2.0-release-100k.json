@@ -1,0 +1,45 @@
+{
+  "Started": "2026-10-26T20:56:44.6544338+08:00",
+  "Configuration": "Release v1.2.0 /O2 x64",
+  "SourceCommit": "4713fab",
+  "Binary": "build/validation/Release/csvp_bench.exe",
+  "BinarySHA256": "DC88FB94E98BA212653C732259306F8B20636E78BB6012AF7D8713306DB67CD9",
+  "InputFile": "data/sample_100k.csv",
+  "InputBytes": 3146588,
+  "InputSHA256": "2A763206890D9A63453FED96410586F2613FDC3CEA413AE7F2B5F766091F9956",
+  "Repeats": 3,
+  "ExitCode": 0,
+  "TimedOut": false,
+  "WallSeconds": 0.4896453,
+  "CPUSeconds": 0.203125,
+  "PeakWorkingSetBytes": 5967872,
+  "PeakPrivateBytesSampled": 1331200,
+  "SampleMilliseconds": 100,
+  "Samples": 3,
+  "CachePolicy": "Input hash read immediately before launch; OS file cache was not flushed.",
+  "Runs": [
+    {
+      "Run": 1,
+      "RowsImported": 98000,
+      "Milliseconds": 62.9193,
+      "RowsSkipped": 2000
+    },
+    {
+      "Run": 2,
+      "RowsImported": 98000,
+      "Milliseconds": 64.0102,
+      "RowsSkipped": 2000
+    },
+    {
+      "Run": 3,
+      "RowsImported": 98000,
+      "Milliseconds": 64.2265,
+      "RowsSkipped": 2000
+    }
+  ],
+  "Stdout": "CSV Import Pipeline Benchmark\r\n=============================\r\n\r\n  Run 1: 98000 rows in 62.9193 ms (2000 skipped) [2000 error rows, 200 retained]\r\n  Run 2: 98000 rows in 64.0102 ms (2000 skipped) [2000 error rows, 200 retained]\r\n  Run 3: 98000 rows in 64.2265 ms (2000 skipped) [2000 error rows, 200 retained]\r\n\r\n--- Summary ---\r\nFile: data/sample_100k.csv\r\nRepeats: 3\r\nAvg time: 63.7187 ms\r\nThroughput: 1.53801e+06 rows/sec\r\nReport written to: docs/evidence/v1.2.0/bench/v1.2.0-release-100k-report.txt\r\n",
+  "Stderr": "",
+  "ReportSummary": "CSV Import Pipeline Benchmark Report\r\nFile: data/sample_100k.csv\r\nRepeats: 3\r\nAvg time: 63.7187 ms\r\nThroughput: 1.53801e+06 rows/sec\r\n\r\nrun rows_imported rows_skipped total_error_rows retained_errors detail_bytes details_truncated time_ms\r\n1 98000 2000 2000 200 49211 yes 62.9193\r\n2 98000 2000 2000 200 49211 yes 64.0102\r\n3 98000 2000 2000 200 49211 yes 64.2265",
+  "ReportSamplesOmitted": "Repeated per-row samples removed; full counts and bounded-detail summary retained here.",
+  "AverageMilliseconds": 63.71866666666667
+}

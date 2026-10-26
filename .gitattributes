@@ -1,2 +1,5 @@
 # CSV fixtures include encoding and line-ending regression cases.
 *.csv -text
+
+# Preserve captured diagnostic/benchmark output, including CRLF and trailing spaces.
+docs/evidence/**/*.txt -text -whitespace

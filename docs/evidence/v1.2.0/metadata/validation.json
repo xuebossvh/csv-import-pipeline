@@ -1,0 +1,1209 @@
+{
+  "method": "VS Code CMake Tools GUI Build and Run Tests; individual CTest runs per discovered test",
+  "sourceCommit": "4713fab",
+  "configurations": [
+    {
+      "name": "debug",
+      "declared": 96,
+      "executed": 96,
+      "passed": 96,
+      "failed": 0,
+      "disabled": 0,
+      "binary": "build/validation/Debug/csvp_tests.exe",
+      "binarySHA256": "158ffbd04118b188dbd86a2568a9c49eb6b9c3dba27d9d0e9afe826c76415e86",
+      "capturedAt": "2026-10-26T12:48:10.076Z",
+      "cases": [
+        {
+          "name": "Concurrent.ActiveImportRejectsSynchronousAndAsynchronousReentry",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.CallbackCancellationDoesNotPermanentlyCloseTheInstance",
+          "seconds": 0.12
+        },
+        {
+          "name": "Concurrent.CallbackExceptionReachesFutureAndReleasesTheActiveSlot",
+          "seconds": 0.12
+        },
+        {
+          "name": "Concurrent.CallbackReentryIsRejectedWithoutHoldingTheStateLock",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.CallbackShutdownDoesNotWaitForItsOwnTask",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.CompletedInstanceCanRunAnotherImportWithFreshStatistics",
+          "seconds": 0.1
+        },
+        {
+          "name": "Concurrent.DestroyingTheInstanceDoesNotBlockAndTheFutureStaysValid",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.DestroyingTheReturnedFutureDoesNotJoinTheWorker",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.EmptyInputWithoutHeaderCompletesWithoutProgress",
+          "seconds": 0.08
+        },
+        {
+          "name": "Concurrent.EmptyProgressCallbackStillImportsEveryRow",
+          "seconds": 0.1
+        },
+        {
+          "name": "Concurrent.ImportAndStats",
+          "seconds": 0.1
+        },
+        {
+          "name": "Concurrent.InputPathAndConstructorArgumentsDoNotRemainBorrowed",
+          "seconds": 0.1
+        },
+        {
+          "name": "Concurrent.MissingInputProducesAFailedResultAndNoProgress",
+          "seconds": 0.08
+        },
+        {
+          "name": "Concurrent.ProgressCountsBadRowsButExcludesHeaderAndBlankLines",
+          "seconds": 0.11
+        },
+        {
+          "name": "Concurrent.ProgressReturningFalseCancelsAtThePublishedBoundary",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.ShutdownNoDeadlock",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.ShutdownTimeoutReportsPendingUntilTheWorkerActuallyFinishes",
+          "seconds": 0.11
+        },
+        {
+          "name": "Concurrent.StatsAtomicRead",
+          "seconds": 0.08
+        },
+        {
+          "name": "Concurrent.StatsThreadSafety",
+          "seconds": 0.15
+        },
+        {
+          "name": "Concurrent.StrictValidationFailureIsDeliveredThroughTheFuture",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.ChineseGBKEncoding",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.ChineseUtf8AbsolutePathAndContent",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.CRLFLFMixedCR",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.DisablingTrimPreservesOrdinarySpaces",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.EmptyFile",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.Exact65536ByteFinalRecordWithoutNewline",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.HeaderMapping",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.InvalidGbkDoesNotConsumeARealComma",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.InvalidUtf8ReportsEncodingErrorAndRecovers",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.LastQuotedFieldAndTrailingEmptyField",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ManyBlankLinesAreSkippedWithoutRecursion",
+          "seconds": 0.1
+        },
+        {
+          "name": "Parser.MaximumLineBoundaryAndOverlongLineRecovery",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.MissingFile",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.NoTrailingNewline",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.QuotedEscapedQuote",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ReentryState",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.ReopenAfterFailureClearsOldErrorAndHeader",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.RepeatedOpenReadCyclesKeepIndependentResults",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.ResourceOwnershipAndCountersHaveSafeTypes",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.TruncatedUtf8AndSurrogateEncodingAreRejected",
+          "seconds": 0.09
+        },
+        {
+          "name": "Parser.UTF8Basic",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.Utf8BomIsExcludedFromTheFirstHeaderField",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ByteBudgetDoesNotLoseAggregateCounts",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ColumnMismatchSkipsAndContinues",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.DefaultErrorLimitBoundsStoredDetails",
+          "seconds": 0.08
+        },
+        {
+          "name": "Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ErrorLimit",
+          "seconds": 0.09
+        },
+        {
+          "name": "Pipeline.ExplicitUnlimitedErrorCollection",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.FailedReopenDoesNotRetainPreviousStatistics",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.LongErrorDetailsRespectByteBudget",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.MissingFile",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.MissingRequiredSchemaColumnsAreNotAccepted",
+          "seconds": 0.08
+        },
+        {
+          "name": "Pipeline.NoHeaderUsesRuleCount",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.OverlongLineIsReportedAndNextLineStillImports",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ParseErrorSkipsAndContinues",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ShutdownOfIdleInstanceIsIdempotentAndRejectsNewImports",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.SkipBadRows",
+          "seconds": 0.08
+        },
+        {
+          "name": "Pipeline.StatisticsExcludeHeaderAndBlankLines",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.StreamingImportMatchesSynchronousResultWithoutSpuriousProgress",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors",
+          "seconds": 0.08
+        },
+        {
+          "name": "Pipeline.SyncSmallClean",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata",
+          "seconds": 0.08
+        },
+        {
+          "name": "Row.BooleanConversionDistinguishesFalseFromInvalid",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber",
+          "seconds": 0.09
+        },
+        {
+          "name": "Row.IntegerBoundsRemainRepresentable",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.InvalidDoubleIsNotSilentlyConvertedToZero",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.InvalidIntegerIsNotSilentlyConvertedToZero",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.NonFiniteDoubleIsRejected",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.BooleanValuesAndInvalidBoolean",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.FractionalIntegerRangeBoundsAreNotTruncated",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.IntegerOverflowAndNumericSuffixesAreRejected",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.InvalidRangeRulesAreReported",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.InvalidRegexIsReportedWithoutThrowing",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.MissingOptionalColumnDoesNotRequireAValue",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.MissingWholeRequiredColumnsProduceErrors",
+          "seconds": 0.08
+        },
+        {
+          "name": "Validator.MultipleRules",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.NanCannotBypassRange",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.RangeCheck",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.RegexCheck",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.RequiredField",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.TypeCheckDouble",
+          "seconds": 0.08
+        },
+        {
+          "name": "Validator.TypeCheckInt",
+          "seconds": 0.08
+        },
+        {
+          "name": "Validator.TypeCheckString",
+          "seconds": 0.07
+        }
+      ],
+      "emptyExplorerContainersExcluded": 1,
+      "architecture": "x64",
+      "optimization": "/Od",
+      "addressSanitizer": false
+    },
+    {
+      "name": "release",
+      "declared": 96,
+      "executed": 96,
+      "passed": 96,
+      "failed": 0,
+      "disabled": 0,
+      "binary": "build/validation/Release/csvp_tests.exe",
+      "binarySHA256": "1da61e76189c976c0a80cc640b4ae5dc22ee3918a5f9eaac26654e015ee47c67",
+      "capturedAt": "2026-10-26T12:50:39.813Z",
+      "cases": [
+        {
+          "name": "Concurrent.ActiveImportRejectsSynchronousAndAsynchronousReentry",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.CallbackCancellationDoesNotPermanentlyCloseTheInstance",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.CallbackExceptionReachesFutureAndReleasesTheActiveSlot",
+          "seconds": 0.08
+        },
+        {
+          "name": "Concurrent.CallbackReentryIsRejectedWithoutHoldingTheStateLock",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.CallbackShutdownDoesNotWaitForItsOwnTask",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.CompletedInstanceCanRunAnotherImportWithFreshStatistics",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.DestroyingTheInstanceDoesNotBlockAndTheFutureStaysValid",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.DestroyingTheReturnedFutureDoesNotJoinTheWorker",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.EmptyInputWithoutHeaderCompletesWithoutProgress",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.EmptyProgressCallbackStillImportsEveryRow",
+          "seconds": 0.08
+        },
+        {
+          "name": "Concurrent.ImportAndStats",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.InputPathAndConstructorArgumentsDoNotRemainBorrowed",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.MissingInputProducesAFailedResultAndNoProgress",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.ProgressCountsBadRowsButExcludesHeaderAndBlankLines",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.ProgressReturningFalseCancelsAtThePublishedBoundary",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.ShutdownNoDeadlock",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.ShutdownTimeoutReportsPendingUntilTheWorkerActuallyFinishes",
+          "seconds": 0.09
+        },
+        {
+          "name": "Concurrent.StatsAtomicRead",
+          "seconds": 0.06
+        },
+        {
+          "name": "Concurrent.StatsThreadSafety",
+          "seconds": 0.07
+        },
+        {
+          "name": "Concurrent.StrictValidationFailureIsDeliveredThroughTheFuture",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ChineseGBKEncoding",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.ChineseUtf8AbsolutePathAndContent",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.CRLFLFMixedCR",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.DisablingTrimPreservesOrdinarySpaces",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.EmptyFile",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.Exact65536ByteFinalRecordWithoutNewline",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable",
+          "seconds": 0.06
+        },
+        {
+          "name": "Parser.HeaderMapping",
+          "seconds": 0.06
+        },
+        {
+          "name": "Parser.InvalidGbkDoesNotConsumeARealComma",
+          "seconds": 0.06
+        },
+        {
+          "name": "Parser.InvalidUtf8ReportsEncodingErrorAndRecovers",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.LastQuotedFieldAndTrailingEmptyField",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ManyBlankLinesAreSkippedWithoutRecursion",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.MaximumLineBoundaryAndOverlongLineRecovery",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.MissingFile",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.NoTrailingNewline",
+          "seconds": 0.06
+        },
+        {
+          "name": "Parser.QuotedEscapedQuote",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ReentryState",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.ReopenAfterFailureClearsOldErrorAndHeader",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.RepeatedOpenReadCyclesKeepIndependentResults",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.ResourceOwnershipAndCountersHaveSafeTypes",
+          "seconds": 0.08
+        },
+        {
+          "name": "Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.TruncatedUtf8AndSurrogateEncodingAreRejected",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.UTF8Basic",
+          "seconds": 0.07
+        },
+        {
+          "name": "Parser.Utf8BomIsExcludedFromTheFirstHeaderField",
+          "seconds": 0.06
+        },
+        {
+          "name": "Pipeline.ByteBudgetDoesNotLoseAggregateCounts",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ColumnMismatchSkipsAndContinues",
+          "seconds": 0.1
+        },
+        {
+          "name": "Pipeline.DefaultErrorLimitBoundsStoredDetails",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ErrorLimit",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ExplicitUnlimitedErrorCollection",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.FailedReopenDoesNotRetainPreviousStatistics",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.LongErrorDetailsRespectByteBudget",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.MissingFile",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.MissingRequiredSchemaColumnsAreNotAccepted",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.NoHeaderUsesRuleCount",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.OverlongLineIsReportedAndNextLineStillImports",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.ParseErrorSkipsAndContinues",
+          "seconds": 0.06
+        },
+        {
+          "name": "Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace",
+          "seconds": 0.09
+        },
+        {
+          "name": "Pipeline.ShutdownOfIdleInstanceIsIdempotentAndRejectsNewImports",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.SkipBadRows",
+          "seconds": 0.06
+        },
+        {
+          "name": "Pipeline.StatisticsExcludeHeaderAndBlankLines",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.StreamingImportMatchesSynchronousResultWithoutSpuriousProgress",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors",
+          "seconds": 0.07
+        },
+        {
+          "name": "Pipeline.SyncSmallClean",
+          "seconds": 0.06
+        },
+        {
+          "name": "Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.BooleanConversionDistinguishesFalseFromInvalid",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber",
+          "seconds": 0.06
+        },
+        {
+          "name": "Row.IntegerBoundsRemainRepresentable",
+          "seconds": 0.06
+        },
+        {
+          "name": "Row.InvalidDoubleIsNotSilentlyConvertedToZero",
+          "seconds": 0.06
+        },
+        {
+          "name": "Row.InvalidIntegerIsNotSilentlyConvertedToZero",
+          "seconds": 0.07
+        },
+        {
+          "name": "Row.NonFiniteDoubleIsRejected",
+          "seconds": 0.06
+        },
+        {
+          "name": "Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.BooleanValuesAndInvalidBoolean",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.FractionalIntegerRangeBoundsAreNotTruncated",
+          "seconds": 0.09
+        },
+        {
+          "name": "Validator.IntegerOverflowAndNumericSuffixesAreRejected",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.InvalidRangeRulesAreReported",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.InvalidRegexIsReportedWithoutThrowing",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.MissingOptionalColumnDoesNotRequireAValue",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.MissingWholeRequiredColumnsProduceErrors",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.MultipleRules",
+          "seconds": 0.09
+        },
+        {
+          "name": "Validator.NanCannotBypassRange",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.RangeCheck",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.RegexCheck",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.RequiredField",
+          "seconds": 0.06
+        },
+        {
+          "name": "Validator.TypeCheckDouble",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.TypeCheckInt",
+          "seconds": 0.07
+        },
+        {
+          "name": "Validator.TypeCheckString",
+          "seconds": 0.06
+        }
+      ],
+      "emptyExplorerContainersExcluded": 1,
+      "architecture": "x64",
+      "optimization": "/O2",
+      "addressSanitizer": false
+    },
+    {
+      "name": "asan",
+      "declared": 96,
+      "executed": 96,
+      "passed": 96,
+      "failed": 0,
+      "disabled": 0,
+      "binary": "build/asan/RelWithDebInfo/csvp_tests.exe",
+      "binarySHA256": "3deb5fc13243b723bde40cacc0572d0938e2fcff15c3ffbb59040ec084b1dce9",
+      "capturedAt": "2026-10-26T12:55:44.654Z",
+      "cases": [
+        {
+          "name": "Concurrent.ActiveImportRejectsSynchronousAndAsynchronousReentry",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.CallbackCancellationDoesNotPermanentlyCloseTheInstance",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.CallbackExceptionReachesFutureAndReleasesTheActiveSlot",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.CallbackReentryIsRejectedWithoutHoldingTheStateLock",
+          "seconds": 0.12
+        },
+        {
+          "name": "Concurrent.CallbackShutdownDoesNotWaitForItsOwnTask",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.CompletedInstanceCanRunAnotherImportWithFreshStatistics",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.DestroyingTheInstanceDoesNotBlockAndTheFutureStaysValid",
+          "seconds": 0.12
+        },
+        {
+          "name": "Concurrent.DestroyingTheReturnedFutureDoesNotJoinTheWorker",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.EmptyInputWithoutHeaderCompletesWithoutProgress",
+          "seconds": 0.11
+        },
+        {
+          "name": "Concurrent.EmptyProgressCallbackStillImportsEveryRow",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.ImportAndStats",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.InputPathAndConstructorArgumentsDoNotRemainBorrowed",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.MissingInputProducesAFailedResultAndNoProgress",
+          "seconds": 0.11
+        },
+        {
+          "name": "Concurrent.ProgressCountsBadRowsButExcludesHeaderAndBlankLines",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.ProgressReturningFalseCancelsAtThePublishedBoundary",
+          "seconds": 0.14
+        },
+        {
+          "name": "Concurrent.ShutdownNoDeadlock",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.ShutdownTimeoutReportsPendingUntilTheWorkerActuallyFinishes",
+          "seconds": 0.15
+        },
+        {
+          "name": "Concurrent.StatsAtomicRead",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.StatsThreadSafety",
+          "seconds": 0.13
+        },
+        {
+          "name": "Concurrent.StrictValidationFailureIsDeliveredThroughTheFuture",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.ChineseGBKEncoding",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.ChineseUtf8AbsolutePathAndContent",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.CRLFLFMixedCR",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.CrlfSplitAt65536ByteBoundaryDoesNotGrowTheField",
+          "seconds": 0.12
+        },
+        {
+          "name": "Parser.DisablingTrimPreservesOrdinarySpaces",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.EmbeddedNulIsAnErrorAndDoesNotHideFollowingRows",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.EmptyFile",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.Exact65536ByteFinalRecordWithoutNewline",
+          "seconds": 0.12
+        },
+        {
+          "name": "Parser.GbkCharacterSplitAt65536ByteBoundaryKeepsItsTrailByte",
+          "seconds": 0.12
+        },
+        {
+          "name": "Parser.HeaderAndFinalRecordWithoutNewlineRemainReadable",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.HeaderMapping",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.InvalidGbkDoesNotConsumeARealComma",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.InvalidUtf8ReportsEncodingErrorAndRecovers",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.LastQuotedFieldAndTrailingEmptyField",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.LegitimateGbkTrailByteIsNotTheCustomDelimiter",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.ManyBlankLinesAreSkippedWithoutRecursion",
+          "seconds": 0.12
+        },
+        {
+          "name": "Parser.MaximumLineBoundaryAndOverlongLineRecovery",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.MisplacedQuotesAreErrorsAndTheNextRecordSurvives",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.MissingFile",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.NoTrailingNewline",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.QuotedEscapedQuote",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.ReadStatusDistinguishesParseErrorFromEndAndCanContinue",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.ReentryState",
+          "seconds": 0.1
+        },
+        {
+          "name": "Parser.ReopenAfterFailureClearsOldErrorAndHeader",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.RepeatedOpenReadCyclesKeepIndependentResults",
+          "seconds": 0.14
+        },
+        {
+          "name": "Parser.ResourceOwnershipAndCountersHaveSafeTypes",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.TrimsEveryOrdinaryFieldButPreservesQuotedSpaces",
+          "seconds": 0.12
+        },
+        {
+          "name": "Parser.TruncatedUtf8AndSurrogateEncodingAreRejected",
+          "seconds": 0.11
+        },
+        {
+          "name": "Parser.UTF8Basic",
+          "seconds": 0.1
+        },
+        {
+          "name": "Parser.Utf8BomIsExcludedFromTheFirstHeaderField",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.ByteBudgetDoesNotLoseAggregateCounts",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.ColumnMismatchSkipsAndContinues",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.DefaultErrorLimitBoundsStoredDetails",
+          "seconds": 0.12
+        },
+        {
+          "name": "Pipeline.ErrorCapDoesNotImplyTruncationWhenExactlyFull",
+          "seconds": 0.12
+        },
+        {
+          "name": "Pipeline.ErrorLimit",
+          "seconds": 0.16
+        },
+        {
+          "name": "Pipeline.ExplicitUnlimitedErrorCollection",
+          "seconds": 0.12
+        },
+        {
+          "name": "Pipeline.FailedReopenDoesNotRetainPreviousStatistics",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.LongErrorDetailsRespectByteBudget",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.MissingFile",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.MissingRequiredSchemaColumnsAreNotAccepted",
+          "seconds": 0.13
+        },
+        {
+          "name": "Pipeline.NoHeaderUsesRuleCount",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.OverlongLineIsReportedAndNextLineStillImports",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.ParseErrorSkipsAndContinues",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.ParserTruncatedErrorPropagatesToResultAndStatistics",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.RawErrorLinePreservesDelimiterQuotesAndWhitespace",
+          "seconds": 0.13
+        },
+        {
+          "name": "Pipeline.ShutdownOfIdleInstanceIsIdempotentAndRejectsNewImports",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.SkipBadRows",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.StatisticsExcludeHeaderAndBlankLines",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.StreamingImportMatchesSynchronousResultWithoutSpuriousProgress",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.StrictModeRejectsColumnAndParseAndValidationErrors",
+          "seconds": 0.15
+        },
+        {
+          "name": "Pipeline.SyncSmallClean",
+          "seconds": 0.11
+        },
+        {
+          "name": "Pipeline.TruncatedHeaderFailurePreservesTruncationMetadata",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.BooleanConversionDistinguishesFalseFromInvalid",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.EmbeddedNulDoesNotTurnAValueIntoAPartialNumber",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.IntegerBoundsRemainRepresentable",
+          "seconds": 0.14
+        },
+        {
+          "name": "Row.InvalidDoubleIsNotSilentlyConvertedToZero",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.InvalidIntegerIsNotSilentlyConvertedToZero",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.NonFiniteDoubleIsRejected",
+          "seconds": 0.11
+        },
+        {
+          "name": "Row.OptionalConversionsPreserveAValidZeroAndRejectInvalidValues",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.BooleanValuesAndInvalidBoolean",
+          "seconds": 0.13
+        },
+        {
+          "name": "Validator.DoubleOverflowNonFiniteAndSuffixesAreRejected",
+          "seconds": 0.12
+        },
+        {
+          "name": "Validator.FractionalIntegerRangeBoundsAreNotTruncated",
+          "seconds": 0.13
+        },
+        {
+          "name": "Validator.IntegerOverflowAndNumericSuffixesAreRejected",
+          "seconds": 0.12
+        },
+        {
+          "name": "Validator.IntegerRangeOutsideLongDoesNotConvertBoundsToLong",
+          "seconds": 0.12
+        },
+        {
+          "name": "Validator.InvalidRangeRulesAreReported",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.InvalidRegexIsReportedWithoutThrowing",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.MissingOptionalColumnDoesNotRequireAValue",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.MissingWholeRequiredColumnsProduceErrors",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.MultipleRules",
+          "seconds": 0.12
+        },
+        {
+          "name": "Validator.NanCannotBypassRange",
+          "seconds": 0.13
+        },
+        {
+          "name": "Validator.RangeCheck",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.RegexCheck",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.RequiredField",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.TypeCheckDouble",
+          "seconds": 0.14
+        },
+        {
+          "name": "Validator.TypeCheckInt",
+          "seconds": 0.11
+        },
+        {
+          "name": "Validator.TypeCheckString",
+          "seconds": 0.11
+        }
+      ],
+      "emptyExplorerContainersExcluded": 1,
+      "architecture": "x86",
+      "optimization": "/O2",
+      "addressSanitizer": true
+    }
+  ]
+}

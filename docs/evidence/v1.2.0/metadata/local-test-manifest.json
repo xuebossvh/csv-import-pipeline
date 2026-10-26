@@ -1,0 +1,30 @@
+[
+  {
+    "path": "tests/test_parser.cpp",
+    "sha256": "a21dd26740e6f521a546d0767001365a2b4d81decf63d2412a2a6f508c07d218"
+  },
+  {
+    "path": "tests/test_validator.cpp",
+    "sha256": "f88cde3744db100f66c55c0285ece24bc57a17ea12ddc3631c9d1a802ed1bf4a"
+  },
+  {
+    "path": "tests/test_pipeline.cpp",
+    "sha256": "9fd89741567646e34257b22924dd263efb1458535991fbb440a1fe4dd73363f1"
+  },
+  {
+    "path": "tests/test_concurrent.cpp",
+    "sha256": "bf08c4e53f61984e91e83a3643bc637b7ffd9848e54fe4bbd68fc85c4b6e0b30"
+  },
+  {
+    "path": "tests/test_support.h",
+    "sha256": "4f87af0ee3d89bc8678dfd256e8867daae33c5b60ebcf9addf172e91d1d63bdd"
+  },
+  {
+    "path": "data/sample_gbk.csv",
+    "sha256": "8d9e0926359bb16c5aa9117bc680a81d066ade5cebe2c4de87e644174ddd8114"
+  },
+  {
+    "path": "data/sample_crlf.csv",
+    "sha256": "23a5fba1e3ead9eae7affc9a96cc93c6f6b44216f059d40bc604d3fdf0bacdc8"
+  }
+]

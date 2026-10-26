@@ -1,0 +1,42 @@
+[build] 正在启动生成
+[proc] 正在执行命令: chcp
+[proc] 正在执行命令: D:/Documents/文档/CMake/bin/cmake.exe --build "D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/build/validation" --config Debug --
+[build] 适用于 .NET Framework MSBuild 版本 17.14.60+43b635718
+[build] 
+[build]   1>Checking Build System
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   parser.cpp
+[build]   validator.cpp
+[build]   pipeline.cpp
+[build]   Generating Code...
+[build]   csvp.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   bench_import.cpp
+[build]   csvp_bench.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp_bench.exe
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+[build]   gtest-all.cc
+[build]   gtest.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gtest.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googletest/CMakeLists.txt
+[build]   gtest_main.cc
+[build]   gtest_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gtest_main.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[build]   test_parser.cpp
+[build]   test_validator.cpp
+[build]   test_pipeline.cpp
+[build]   test_concurrent.cpp
+[build]   Generating Code...
+[build]   csvp_tests.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\Debug\csvp_tests.exe
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+[build]   gtest-all.cc
+[build]   gmock-all.cc
+[build]   Generating Code...
+[build]   gmock.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gmock.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/third_party/googletest/googlemock/CMakeLists.txt
+[build]   gtest-all.cc
+[build]   gmock-all.cc
+[build]   gmock_main.cc
+[build]   Generating Code...
+[build]   gmock_main.vcxproj -> D:\Documents\Documents\BaiduSyncdisk\C++项目\c++ Study\KDevelop-Train\LessonCode\week01\practice\csv-import-pipeline\build\validation\lib\Debug\gmock_main.lib
+[build]   Building Custom Rule D:/Documents/Documents/BaiduSyncdisk/C++项目/c++ Study/KDevelop-Train/LessonCode/week01/practice/csv-import-pipeline/CMakeLists.txt
+[driver] 生成完毕: 00:00:40.502
+[build] 生成已完成，退出代码为 0

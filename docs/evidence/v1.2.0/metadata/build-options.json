@@ -1,0 +1,70 @@
+{
+  "cache": [
+    {
+      "Folder": "build/validation",
+      "Values": [
+        "BUILD_TESTS:BOOL=ON",
+        "CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /GR /EHsc",
+        "CMAKE_CXX_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1",
+        "CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG",
+        "CMAKE_CXX_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG",
+        "CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG",
+        "CMAKE_GENERATOR_INSTANCE:UNINITIALIZED=D:/Software/VSBuildTools2022",
+        "CMAKE_PROJECT_VERSION:STATIC=1.2.0",
+        "ENABLE_ASAN:BOOL=OFF",
+        "CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1",
+        "CMAKE_GENERATOR_PLATFORM:INTERNAL=x64"
+      ]
+    },
+    {
+      "Folder": "build/asan",
+      "Values": [
+        "BUILD_TESTS:BOOL=ON",
+        "CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /GR /EHsc",
+        "CMAKE_CXX_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1",
+        "CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG",
+        "CMAKE_CXX_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG",
+        "CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG",
+        "CMAKE_GENERATOR_INSTANCE:UNINITIALIZED=D:/Software/VSBuildTools2022",
+        "CMAKE_PROJECT_VERSION:STATIC=1.2.0",
+        "ENABLE_ASAN:BOOL=ON",
+        "CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1",
+        "CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1",
+        "CMAKE_GENERATOR_PLATFORM:INTERNAL=Win32"
+      ]
+    }
+  ],
+  "projectProof": [
+    {
+      "path": "build/validation/csvp.vcxproj",
+      "options": [
+        "<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>",
+        "<Optimization>Disabled</Optimization>",
+        "<Optimization>MaxSpeed</Optimization>"
+      ]
+    },
+    {
+      "path": "build/asan/csvp.vcxproj",
+      "options": [
+        "<EnableAsan>true</EnableAsan>",
+        "<AdditionalOptions>%(AdditionalOptions) /utf-8 /Zc:__cplusplus /fsanitize=address</AdditionalOptions>",
+        "<Optimization>MaxSpeed</Optimization>"
+      ]
+    },
+    {
+      "path": "build/asan/third_party/googletest/googletest/gtest.vcxproj",
+      "options": [
+        "<EnableAsan>true</EnableAsan>",
+        "<AdditionalOptions>%(AdditionalOptions) -J -utf-8 /fsanitize=address</AdditionalOptions>",
+        "<Optimization>MaxSpeed</Optimization>"
+      ]
+    }
+  ]
+}
