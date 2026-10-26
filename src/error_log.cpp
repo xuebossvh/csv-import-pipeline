@@ -14,6 +14,7 @@
 #include <windows.h>
 #include <fcntl.h>
 #include <io.h>
+#include <share.h>
 #include <sys/stat.h>
 #else
 #include <fcntl.h>
@@ -40,6 +41,28 @@ void validateOutputPath(const std::string& input_path, const std::string& output
     }
 
     const fs::path output = fs::u8path(output_path);
+#ifdef _WIN32
+    // Win32 strips trailing dots/spaces from ordinary path components. Reject
+    // those spellings instead of allowing a missing input to alias a new log.
+    for (const auto& component : output.lexically_normal()) {
+        const auto part = component.native();
+        if (component == output.root_name()) continue;
+        if (!part.empty() && (part.back() == L'.' || part.back() == L' '))
+            throw std::invalid_argument("Ambiguous trailing dot/space in error log path");
+        if (part.find(L':') != std::wstring::npos)
+            throw std::invalid_argument("Error log must be an ordinary file, not an NTFS stream");
+        auto base = part.substr(0, part.find(L'.'));
+        while (!base.empty() && base.back() == L' ') base.pop_back();
+        for (auto& c : base) if (c >= L'a' && c <= L'z') c -= L'a' - L'A';
+        const bool port = base.size() == 4 && (base.compare(0,3,L"COM") == 0 ||
+                          base.compare(0,3,L"LPT") == 0) &&
+                          ((base[3] >= L'0' && base[3] <= L'9') ||
+                           base[3] == 0x00B9 || base[3] == 0x00B2 || base[3] == 0x00B3);
+        if (port || base == L"NUL" || base == L"CON" || base == L"PRN" ||
+            base == L"AUX" || base == L"CONIN$" || base == L"CONOUT$")
+            throw std::invalid_argument("Error log must not use a Windows device path");
+    }
+#endif
     std::error_code status_error;
     const fs::file_status status = fs::symlink_status(output, status_error);
     if (status_error && status_error != std::errc::no_such_file_or_directory
@@ -92,10 +115,11 @@ ErrorLogWriter::ErrorLogWriter(const std::string& input_path, const std::string&
     // The preflight check improves diagnostics; exclusive creation below is the
     // actual race-safe guarantee that an existing file is never truncated.
 #ifdef _WIN32
-    const int descriptor = _wopen(output.c_str(),
-                                  _O_WRONLY | _O_CREAT | _O_EXCL | _O_BINARY | _O_NOINHERIT,
-                                  _S_IREAD | _S_IWRITE);
-    if (descriptor == -1) fail("create", errno);
+    int descriptor = -1;
+    const errno_t created = _wsopen_s(&descriptor, output.c_str(),
+                                     _O_WRONLY | _O_CREAT | _O_EXCL | _O_BINARY | _O_NOINHERIT,
+                                     _SH_DENYWR, _S_IREAD | _S_IWRITE);
+    if (created != 0) fail("create", created);
     std::FILE* stream = _fdopen(descriptor, "wb");
     if (!stream) {
         const int open_error = errno;

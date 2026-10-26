@@ -178,14 +178,16 @@ ImportPipeline::Result ImportPipeline::runImport(
                 const ErrorCode code = parser.lastErrorCode();
                 const bool recoverable = code == ErrorCode::ParseError ||
                                          code == ErrorCode::EncodingError;
+                if (recoverable) {
+                    ++current.total_lines;
+                    ++result.rows_skipped;
+                }
                 collectError(parser.lineNumber(), parser.rawLine(), code,
                              parser.lastError(), result, parser.rawLineTruncated(), log.get());
                 if (!recoverable) {
                     result.success = false;
                     break;
                 }
-                ++current.total_lines;
-                ++result.rows_skipped;
                 if (!cfg_.skip_bad_rows) {
                     throw std::runtime_error("CSV parsing failed at line " +
                                              std::to_string(parser.lineNumber()));
@@ -196,13 +198,13 @@ ImportPipeline::Result ImportPipeline::runImport(
 
             ++current.total_lines;
             if (row.size() != expected_columns) {
+                ++result.rows_skipped;
                 collectError(parser.lineNumber(), parser.rawLine(),
                              ErrorCode::ColumnCountMismatch,
                              "Column count mismatch: expected " +
                                  std::to_string(expected_columns) + ", got " +
                                  std::to_string(row.size()),
                              result, false, log.get());
-                ++result.rows_skipped;
                 if (!cfg_.skip_bad_rows) {
                     throw std::runtime_error("Column count mismatch at line " +
                                              std::to_string(parser.lineNumber()));
@@ -302,8 +304,8 @@ void ImportPipeline::validateAndCollect(const Row& row, uint64_t line_number,
         ++result.rows_imported;
         return;
     }
-    collectError(line_number, raw_line, std::move(details), result, log);
     ++result.rows_skipped;
+    collectError(line_number, raw_line, std::move(details), result, log);
     if (!cfg_.skip_bad_rows) {
         throw std::runtime_error("Validation failed at line " +
                                  std::to_string(line_number));

@@ -74,7 +74,11 @@ void validatePaths(const std::filesystem::path& input,const std::filesystem::pat
         throw std::runtime_error("Input CSV does not exist or is not a regular file");
     const auto source=std::filesystem::weakly_canonical(input);
     const auto output=std::filesystem::weakly_canonical(report);
-    if (source==output || (std::filesystem::exists(output) && std::filesystem::equivalent(source,output)))
+    bool same=source==output;
+#ifdef _WIN32
+    same=same || CompareStringOrdinal(source.c_str(),-1,output.c_str(),-1,TRUE)==CSTR_EQUAL;
+#endif
+    if (same || (std::filesystem::exists(output) && std::filesystem::equivalent(source,output)))
         throw std::invalid_argument("Report path must not refer to the input CSV");
     if (!output.parent_path().empty() && !std::filesystem::is_directory(output.parent_path()))
         throw std::runtime_error("Report parent directory does not exist");
@@ -124,7 +128,14 @@ void runBench(const std::string& input,int repeat,const std::filesystem::path& r
             error_log_base.parent_path()/std::filesystem::u8path(
                 error_log_base.stem().u8string()+".run-"+std::to_string(r+1)+".jsonl");
         validatePaths(std::filesystem::u8path(input),path);
-        if(std::filesystem::weakly_canonical(path)==std::filesystem::weakly_canonical(report) ||
+        const auto log_normal=std::filesystem::weakly_canonical(path);
+        const auto report_normal=std::filesystem::weakly_canonical(report);
+        bool same_output=log_normal==report_normal;
+#ifdef _WIN32
+        same_output=same_output ||
+            CompareStringOrdinal(log_normal.c_str(),-1,report_normal.c_str(),-1,TRUE)==CSTR_EQUAL;
+#endif
+        if(same_output ||
            (std::filesystem::exists(path)&&std::filesystem::exists(report)&&
             std::filesystem::equivalent(path,report)))
             throw std::invalid_argument("Error log must not refer to the report file");
@@ -160,6 +171,12 @@ void runBench(const std::string& input,int repeat,const std::filesystem::path& r
     const double rate=totalMs>0?static_cast<double>(totalRows/(totalMs/1000)):0;
     std::cout<<"\n--- Summary ---\nFile: "<<input<<"\nRepeats: "<<repeat
              <<"\nAvg time: "<<average<<" ms\nThroughput: "<<rate<<" rows/sec\n";
+    // Re-check now that logs exist: case/alias spellings must never let report
+    // truncation overwrite a completed archive.
+    validatePaths(std::filesystem::u8path(input),report);
+    if(std::filesystem::exists(report)) for(const auto& error_path:error_paths)
+        if(std::filesystem::equivalent(report,error_path))
+            throw std::invalid_argument("Report path refers to an error archive");
     writeReport(report,input,repeat,runs,last_details,average,rate);
     std::cout<<"Report written to: "<<report.u8string()<<'\n';
     // All logs and the report are closed. These are process lifetime OS peaks.
