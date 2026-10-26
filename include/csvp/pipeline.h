@@ -11,6 +11,7 @@
 #include <memory>
 
 namespace csvp {
+namespace detail { class ErrorLogWriter; }
 
 // ImportPipeline: CSV 导入管道的顶层入口。
 // 串联 CsvParser（解析）+ FieldValidator（校验）+ 错误收集。
@@ -27,6 +28,7 @@ public:
         bool skip_bad_rows = false;   // 是否跳过坏行继续导入
         size_t error_limit = 200;     // 最大错误详情条数；0 显式表示不限
         size_t max_error_bytes = 4 * 1024 * 1024; // 详情字节预算；0 显式表示不限
+        std::string error_log_path;   // UTF-8；非空时全部错误写JSONL，独占创建不覆写
     };
 
     struct Result {
@@ -39,6 +41,9 @@ public:
         bool errors_truncated = false;
         size_t error_bytes = 0;       // 保留对象及字符串内容；不含allocator额外开销
         bool cancelled = false;     // 协作停止后的部分结果；success仍表示无致命错误
+        uint64_t errors_written = 0;
+        bool error_log_complete = false; // 已观察错误均写出并close；不等于全输入成功
+        std::string error_log_path;
     };
 
     ImportPipeline();
@@ -87,13 +92,15 @@ private:
     Result runImport(const char* filepath, const std::function<bool(size_t)>& progress,
                      const std::shared_ptr<SharedState>& state);
     void validateAndCollect(const Row& row, uint64_t line_number,
-                            const std::string& raw_line, Result& result);
+                            const std::string& raw_line, Result& result,
+                            detail::ErrorLogWriter* log);
     size_t detailBudget(const Result& result) const;
     void collectError(uint64_t line_number, const std::string& raw_line,
-                      FieldValidator::ValidationResult details, Result& result);
+                      FieldValidator::ValidationResult details, Result& result,
+                      detail::ErrorLogWriter* log);
     void collectError(uint64_t line_number, const std::string& raw_line,
                       ErrorCode code, const std::string& message, Result& result,
-                      bool raw_line_truncated = false);
+                      bool raw_line_truncated, detail::ErrorLogWriter* log);
 
     Config cfg_;
     std::vector<FieldRule> rules_;

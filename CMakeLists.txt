@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(csv_import_pipeline VERSION 1.2.0 LANGUAGES CXX)
+project(csv_import_pipeline VERSION 1.3.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,6 +15,7 @@ set(CSVP_SOURCES
     src/parser.cpp
     src/validator.cpp
     src/pipeline.cpp
+    src/error_log.cpp
 )
 
 add_library(csvp STATIC ${CSVP_SOURCES})
@@ -107,7 +108,7 @@ if(BUILD_BENCH)
     add_executable(csvp_bench bench/bench_import.cpp)
     target_link_libraries(csvp_bench PRIVATE csvp)
     if(WIN32)
-        target_link_libraries(csvp_bench PRIVATE shell32)
+        target_link_libraries(csvp_bench PRIVATE shell32 psapi)
     endif()
     csvp_copy_asan_runtime(csvp_bench)
 

@@ -1,4 +1,5 @@
 #include "csvp/pipeline.h"
+#include "error_log.h"
 
 #include <algorithm>
 #include <limits>
@@ -7,6 +8,37 @@
 #include <thread>
 
 namespace csvp {
+namespace {
+// Rebuild the memory preview; resizing full strings would retain their capacity.
+FieldValidator::ValidationResult boundedPreview(
+    const FieldValidator::ValidationResult& full, size_t budget) {
+    FieldValidator::ValidationResult preview;
+    preview.valid = false;
+    size_t remaining = budget;
+    for (const auto& source : full.errors) {
+        if (remaining < sizeof(CellError)) { preview.details_truncated = true; break; }
+        CellError cell;
+        cell.column_index = source.column_index;
+        cell.code = source.code;
+        cell.details_truncated = source.details_truncated;
+        remaining -= sizeof(CellError);
+        const auto copy = [&](std::string& out, const std::string& in) {
+            const size_t n = std::min(remaining, in.size());
+            out.assign(in.data(), n);
+            remaining -= n;
+            cell.details_truncated = cell.details_truncated || n != in.size();
+        };
+        copy(cell.column_name, source.column_name);
+        copy(cell.message, source.message);
+        copy(cell.raw_value, source.raw_value);
+        preview.details_truncated = preview.details_truncated || cell.details_truncated;
+        preview.errors.push_back(std::move(cell));
+    }
+    preview.details_truncated = preview.details_truncated || full.details_truncated;
+    preview.storage_bytes = budget - remaining;
+    return preview;
+}
+}
 
 struct ImportPipeline::SharedState {
     std::timed_mutex mutex;
@@ -76,6 +108,15 @@ ImportPipeline::Result ImportPipeline::runImport(
     Stats current;
     const auto started = std::chrono::steady_clock::now();
     CsvParser parser(cfg_.parser);
+    std::unique_ptr<detail::ErrorLogWriter> log;
+    result.error_log_path = cfg_.error_log_path;
+    const auto closeLog = [&] {
+        if (log) {
+            log->close();
+            result.errors_written = log->count();
+            result.error_log_complete = true;
+        }
+    };
 
     const auto finish = [&]() {
         current.bytes_read = parser.bytesRead();
@@ -104,15 +145,20 @@ ImportPipeline::Result ImportPipeline::runImport(
     };
 
     try {
+        if (!cfg_.error_log_path.empty())
+            log = std::make_unique<detail::ErrorLogWriter>(filepath ? filepath : "",
+                                                          cfg_.error_log_path);
         if ((state->stop_requested.load(std::memory_order_relaxed) || state->closed.load(std::memory_order_relaxed))) {
             result.cancelled = true;
+            closeLog();
             finish();
             return result;
         }
         if (!parser.parse(filepath)) {
             result.success = false;
             collectError(parser.lineNumber(), parser.rawLine(), parser.lastErrorCode(),
-                         parser.lastError(), result, parser.rawLineTruncated());
+                         parser.lastError(), result, parser.rawLineTruncated(), log.get());
+            closeLog();
             finish();
             return result;
         }
@@ -133,7 +179,7 @@ ImportPipeline::Result ImportPipeline::runImport(
                 const bool recoverable = code == ErrorCode::ParseError ||
                                          code == ErrorCode::EncodingError;
                 collectError(parser.lineNumber(), parser.rawLine(), code,
-                             parser.lastError(), result, parser.rawLineTruncated());
+                             parser.lastError(), result, parser.rawLineTruncated(), log.get());
                 if (!recoverable) {
                     result.success = false;
                     break;
@@ -155,7 +201,7 @@ ImportPipeline::Result ImportPipeline::runImport(
                              "Column count mismatch: expected " +
                                  std::to_string(expected_columns) + ", got " +
                                  std::to_string(row.size()),
-                             result);
+                             result, false, log.get());
                 ++result.rows_skipped;
                 if (!cfg_.skip_bad_rows) {
                     throw std::runtime_error("Column count mismatch at line " +
@@ -164,12 +210,15 @@ ImportPipeline::Result ImportPipeline::runImport(
                 checkpoint();
                 continue;
             }
-            validateAndCollect(row, parser.lineNumber(), parser.rawLine(), result);
+            validateAndCollect(row, parser.lineNumber(), parser.rawLine(), result, log.get());
             checkpoint();
         }
+        closeLog();
     } catch (...) {
         // Finish the observable statistics, then preserve the original exception,
         // including bad_alloc. Resource exhaustion is never treated as a bad row.
+        // Surface a simultaneous flush failure rather than implying error durability.
+        try { closeLog(); } catch (...) { finish(); throw; }
         finish();
         throw;
     }
@@ -188,8 +237,12 @@ size_t ImportPipeline::detailBudget(const Result& result) const {
 
 void ImportPipeline::collectError(uint64_t line_number, const std::string& raw_line,
                                    FieldValidator::ValidationResult details,
-                                   Result& result) {
+                                   Result& result, detail::ErrorLogWriter* log) {
     ++result.error_count;
+    if (log) {
+        log->write(line_number, raw_line, details.errors);
+        result.errors_written = log->count();
+    }
     const size_t maximum = cfg_.max_error_bytes == 0
         ? std::numeric_limits<size_t>::max() : cfg_.max_error_bytes;
     if ((cfg_.error_limit != 0 && result.errors.size() >= cfg_.error_limit) ||
@@ -200,6 +253,7 @@ void ImportPipeline::collectError(uint64_t line_number, const std::string& raw_l
     }
 
     size_t remaining = maximum - result.error_bytes - sizeof(RowError);
+    if (details.storage_bytes > remaining) details = boundedPreview(details, remaining);
     RowError error;
     error.line_number = line_number;
     error.cell_errors = std::move(details.errors);
@@ -216,10 +270,13 @@ void ImportPipeline::collectError(uint64_t line_number, const std::string& raw_l
 
 void ImportPipeline::collectError(uint64_t line_number, const std::string& raw_line,
                                    ErrorCode code, const std::string& message,
-                                    Result& result, bool raw_line_truncated) {
+                                    Result& result, bool raw_line_truncated,
+                                    detail::ErrorLogWriter* log) {
+    if (log && raw_line_truncated)
+        throw std::runtime_error("Cannot archive a truncated raw CSV record; increase max_line_bytes");
     FieldValidator::ValidationResult details;
     details.valid = false;
-    const size_t budget = detailBudget(result);
+    const size_t budget = log ? std::numeric_limits<size_t>::max() : detailBudget(result);
     if (budget >= sizeof(CellError)) {
         CellError error;
         error.code = code;
@@ -233,17 +290,19 @@ void ImportPipeline::collectError(uint64_t line_number, const std::string& raw_l
         details.details_truncated = true;
     }
     details.details_truncated = details.details_truncated || raw_line_truncated;
-    collectError(line_number, raw_line, std::move(details), result);
+    collectError(line_number, raw_line, std::move(details), result, log);
 }
 
 void ImportPipeline::validateAndCollect(const Row& row, uint64_t line_number,
-                                        const std::string& raw_line, Result& result) {
-    auto details = validator_.validateBounded(row, detailBudget(result));
+                                        const std::string& raw_line, Result& result,
+                                        detail::ErrorLogWriter* log) {
+    auto details = validator_.validateBounded(row, log ? std::numeric_limits<size_t>::max()
+                                                     : detailBudget(result));
     if (details.valid) {
         ++result.rows_imported;
         return;
     }
-    collectError(line_number, raw_line, std::move(details), result);
+    collectError(line_number, raw_line, std::move(details), result, log);
     ++result.rows_skipped;
     if (!cfg_.skip_bad_rows) {
         throw std::runtime_error("Validation failed at line " +
